@@ -21,7 +21,7 @@ describe('setCurrencyAction', function () {
         expect(setCurrencyAction(undefined))
         .toEqual({
             type: ACTION_NAME,
-            currency: undefined
+            currency: null
         });
 
         expect(setCurrencyAction(null))

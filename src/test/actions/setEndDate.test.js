@@ -21,7 +21,7 @@ describe('setEndDateAction', function () {
         expect(setEndDateAction(undefined))
         .toEqual({
             type: ACTION_NAME,
-            endDate: undefined
+            endDate: null
         });
 
         expect(setEndDateAction(null))

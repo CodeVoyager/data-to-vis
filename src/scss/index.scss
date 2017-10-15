@@ -1,0 +1,84 @@
+@import './config/_variables.scss';
+@import './_loader.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  * {
+      box-sizing: border-box;
+  }
+}
+
+.app {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    .header {
+        text-align: center;
+        color: darken(map-get($colors, color3), 15%);
+    }
+}
+
+.cols {
+    display: block;
+    .col-half {
+        display: inline-block;
+        width: 50%;
+        padding: 0 3%;
+
+    }
+    .col-full {
+        width: 100%;
+        display: block;
+        padding: 0 3%;
+    }
+}
+
+.steps {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
+    .react-datepicker-wrapper, .react-datepicker__input-container {
+        width: 100%;
+    }
+
+    .step {
+        padding-bottom: 10px;
+        .header {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.input {
+    background: map-get($colors, color2);
+    display: block;
+    width: 100%;
+    border: 1px solid map-get($colors, color3);
+    color: darken(map-get($colors, color3), 15%);
+    height: 30px;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 0 5px;
+    &:focus {
+        outline: 0;
+    }
+    &.submit {
+        cursor: pointer;
+    }
+}
+
+.graph {
+    text-align: center;
+    .path {
+        stroke: map-get($colors, color6);
+    }
+    .anchor {
+        fill: map-get($colors, color6);
+        font-size: 13px;
+    }
+}

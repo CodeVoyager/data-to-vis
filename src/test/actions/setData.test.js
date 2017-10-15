@@ -22,13 +22,13 @@ describe('setDataAction', function () {
         expect(setDataAction(undefined))
         .toEqual({
             type: ACTION_NAME,
-            data: undefined
+            data: []
         });
 
         expect(setDataAction(null))
         .toEqual({
             type: ACTION_NAME,
-            data: null
+            data: []
         });
 
         expect(setDataAction([]))

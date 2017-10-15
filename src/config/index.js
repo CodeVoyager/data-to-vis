@@ -1,0 +1,7 @@
+const DATE_FORMAT = 'YYYY-MM-DD'
+const PREFERED_CURRENCY = 'USD'
+
+export {
+    DATE_FORMAT,
+    PREFERED_CURRENCY
+};

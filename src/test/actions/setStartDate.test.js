@@ -22,7 +22,7 @@ describe('setStartDateAction', function () {
         expect(setStartDateAction(undefined))
         .toEqual({
             type: ACTION_NAME,
-            startDate: undefined
+            startDate: null
         });
 
         expect(setStartDateAction(null))

@@ -1,5 +1,94 @@
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2); }
+
+.loader:before, .loader:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 10px);
+  background-color: #CE513D;
+  animation: squaremove 1s ease-in-out infinite;
+  top: 45%; }
+
+.loader:after {
+  bottom: 0;
+  animation-delay: 0.5s; }
+
+@keyframes squaremove {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0); }
+  25% {
+    transform: translate(40px, 40px) rotate(45deg); }
+  50% {
+    transform: translate(0px, 80px) rotate(0deg); }
+  75% {
+    transform: translate(-40px, 40px) rotate(45deg); } }
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
+  box-sizing: border-box; }
+  body * {
+    box-sizing: border-box; }
+
+.app {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto; }
+  .app .header {
+    text-align: center;
+    color: #51697c; }
+
+.cols {
+  display: block; }
+  .cols .col-half {
+    display: inline-block;
+    width: 50%;
+    padding: 0 3%; }
+  .cols .col-full {
+    width: 100%;
+    display: block;
+    padding: 0 3%; }
+
+.steps {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; }
+  .steps .react-datepicker-wrapper, .steps .react-datepicker__input-container {
+    width: 100%; }
+  .steps .step {
+    padding-bottom: 10px; }
+    .steps .step .header {
+      padding-bottom: 10px; }
+
+.input {
+  background: #FFF;
+  display: block;
+  width: 100%;
+  border: 1px solid #7590A5;
+  color: #51697c;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 0 5px; }
+  .input:focus {
+    outline: 0; }
+  .input.submit {
+    cursor: pointer; }
+
+.graph {
+  text-align: center; }
+  .graph .path {
+    stroke: #CE513D; }
+  .graph .anchor {
+    fill: #CE513D;
+    font-size: 13px; }
