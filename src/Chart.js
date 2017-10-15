@@ -6,6 +6,7 @@ const d3Array = require('d3-array');
 const d3TimeFormat = require('d3-time-format');
 const d3Axis = require('d3-axis');
 const d3Shape = require('d3-shape');
+const R = require('ramda');
 
 const DEFAULT_MARGIN = {top: 0, right: 0, bottom: 0, left: 0};
 const DEFAULT_WIDTH = 600;
@@ -15,6 +16,14 @@ const DEFAULT_HEIGHT = 300;
 export const Chart = (props) => {
     if (!props.data) {
         return null;
+    }
+
+    if (R.isNil(props.xKey)) {
+        throw new Error('xKey is required');
+    }
+
+    if (R.isNil(props.yKey)) {
+        throw new Error('xKey is required');
     }
 
     let el = ReactFauxDOM.createElement('svg');

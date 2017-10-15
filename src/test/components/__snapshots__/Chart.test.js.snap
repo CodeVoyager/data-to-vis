@@ -1,0 +1,419 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chart component renders correctly 1`] = `
+<div
+  className="graph graph-line"
+>
+  <svg
+    height={300}
+    style={Object {}}
+    width={600}
+  >
+    <g
+      style={Object {}}
+      transform="translate(0,0)"
+    >
+      <g
+        fill="none"
+        fontFamily="sans-serif"
+        fontSize={10}
+        style={Object {}}
+        textAnchor="middle"
+        transform="translate(0,300)"
+      >
+        <path
+          className="domain"
+          d="M0.5,6V0.5H600.5V6"
+          stroke="#000"
+          style={Object {}}
+        />
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0.5,0)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            y2={6}
+          />
+          <text
+            dy="0.71em"
+            fill="#000"
+            style={Object {}}
+            y={9}
+          >
+            September
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(75.5,0)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            y2={6}
+          />
+          <text
+            dy="0.71em"
+            fill="#000"
+            style={Object {}}
+            y={9}
+          >
+            03 AM
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(150.5,0)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            y2={6}
+          />
+          <text
+            dy="0.71em"
+            fill="#000"
+            style={Object {}}
+            y={9}
+          >
+            06 AM
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(225.5,0)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            y2={6}
+          />
+          <text
+            dy="0.71em"
+            fill="#000"
+            style={Object {}}
+            y={9}
+          >
+            09 AM
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(300.5,0)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            y2={6}
+          />
+          <text
+            dy="0.71em"
+            fill="#000"
+            style={Object {}}
+            y={9}
+          >
+            12 PM
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(375.5,0)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            y2={6}
+          />
+          <text
+            dy="0.71em"
+            fill="#000"
+            style={Object {}}
+            y={9}
+          >
+            03 PM
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(450.5,0)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            y2={6}
+          />
+          <text
+            dy="0.71em"
+            fill="#000"
+            style={Object {}}
+            y={9}
+          >
+            06 PM
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(525.5,0)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            y2={6}
+          />
+          <text
+            dy="0.71em"
+            fill="#000"
+            style={Object {}}
+            y={9}
+          >
+            09 PM
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(600.5,0)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            y2={6}
+          />
+          <text
+            dy="0.71em"
+            fill="#000"
+            style={Object {}}
+            y={9}
+          >
+            Mon 02
+          </text>
+        </g>
+      </g>
+      <g
+        fill="none"
+        fontFamily="sans-serif"
+        fontSize={10}
+        style={Object {}}
+        textAnchor="end"
+      >
+        <path
+          className="domain"
+          d="M-6,300.5H0.5V0.5H-6"
+          stroke="#000"
+          style={Object {}}
+        />
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0,288.5)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            x2={-6}
+          />
+          <text
+            dy="0.32em"
+            fill="#000"
+            style={Object {}}
+            x={-9}
+          >
+            127.4
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0,255.5)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            x2={-6}
+          />
+          <text
+            dy="0.32em"
+            fill="#000"
+            style={Object {}}
+            x={-9}
+          >
+            127.5
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0,221.5)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            x2={-6}
+          />
+          <text
+            dy="0.32em"
+            fill="#000"
+            style={Object {}}
+            x={-9}
+          >
+            127.6
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0,188.5)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            x2={-6}
+          />
+          <text
+            dy="0.32em"
+            fill="#000"
+            style={Object {}}
+            x={-9}
+          >
+            127.7
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0,154.5)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            x2={-6}
+          />
+          <text
+            dy="0.32em"
+            fill="#000"
+            style={Object {}}
+            x={-9}
+          >
+            127.8
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0,121.5)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            x2={-6}
+          />
+          <text
+            dy="0.32em"
+            fill="#000"
+            style={Object {}}
+            x={-9}
+          >
+            127.9
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0,87.5)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            x2={-6}
+          />
+          <text
+            dy="0.32em"
+            fill="#000"
+            style={Object {}}
+            x={-9}
+          >
+            128.0
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0,54.5)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            x2={-6}
+          />
+          <text
+            dy="0.32em"
+            fill="#000"
+            style={Object {}}
+            x={-9}
+          >
+            128.1
+          </text>
+        </g>
+        <g
+          className="tick"
+          opacity={1}
+          style={Object {}}
+          transform="translate(0,20.5)"
+        >
+          <line
+            stroke="#000"
+            style={Object {}}
+            x2={-6}
+          />
+          <text
+            dy="0.32em"
+            fill="#000"
+            style={Object {}}
+            x={-9}
+          >
+            128.2
+          </text>
+        </g>
+      </g>
+      <path
+        className="path"
+        d="M0,0L600,300"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        style={Object {}}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Chart component renders correctly 2`] = `null`;
