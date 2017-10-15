@@ -23,7 +23,7 @@ export const Chart = (props) => {
     }
 
     if (R.isNil(props.yKey)) {
-        throw new Error('xKey is required');
+        throw new Error('yKey is required');
     }
 
     let el = ReactFauxDOM.createElement('svg');

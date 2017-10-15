@@ -29,20 +29,23 @@ describe('Chart component', function () {
     });
 
     it('throws errors on missing keys', function () {
+        let xKey = 'XKEY';
+        let yKey = 'YKEY';
+
         expect(() => {
             renderer.create(<Chart data={data}/>)
-        }).toThrow();
+        }).toThrowErrorMatchingSnapshot();
         expect(() => {
-            renderer.create(<Chart data={data} xKey={null}/>)
-        }).toThrow();
+            renderer.create(<Chart data={data} xKey={null} yKey={yKey}/>)
+        }).toThrowErrorMatchingSnapshot();
         expect(() => {
-            renderer.create(<Chart data={data} yKey={null}/>)
-        }).toThrow();
+            renderer.create(<Chart data={data} xKey={undefined} yKey={yKey}/>)
+        }).toThrowErrorMatchingSnapshot();
         expect(() => {
-            renderer.create(<Chart data={data} xKey={undefined}/>)
-        }).toThrow();
+            renderer.create(<Chart data={data} xKey={xKey} yKey={undefined}/>)
+        }).toThrowErrorMatchingSnapshot();
         expect(() => {
-            renderer.create(<Chart data={data} yKey={undefined}/>)
-        }).toThrow();
+            renderer.create(<Chart data={data} xKey={xKey} yKey={null}/>)
+        }).toThrowErrorMatchingSnapshot();
     });
 });

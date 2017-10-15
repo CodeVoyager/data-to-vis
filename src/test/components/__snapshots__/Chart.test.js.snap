@@ -417,3 +417,13 @@ exports[`Chart component renders correctly 1`] = `
 `;
 
 exports[`Chart component renders correctly 2`] = `null`;
+
+exports[`Chart component throws errors on missing keys 1`] = `"xKey is required"`;
+
+exports[`Chart component throws errors on missing keys 2`] = `"xKey is required"`;
+
+exports[`Chart component throws errors on missing keys 3`] = `"xKey is required"`;
+
+exports[`Chart component throws errors on missing keys 4`] = `"yKey is required"`;
+
+exports[`Chart component throws errors on missing keys 5`] = `"yKey is required"`;
