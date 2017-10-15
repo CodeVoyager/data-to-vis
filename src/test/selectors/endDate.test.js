@@ -3,6 +3,11 @@ import endDate from '../../selectors/endDate'
 
 describe('endDate selector', function () {
 
+    it('should exist', function (done) {
+        expect(endDate).not.toBeUndefined()
+        done();
+    });
+
     it('should work on undefined state', function (done) {
         expect(endDate()).toBeUndefined();
         done();

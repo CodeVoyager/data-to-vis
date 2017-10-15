@@ -3,6 +3,11 @@ import data from '../../selectors/data'
 
 describe('data selector', function () {
 
+    it('should exist', function (done) {
+        expect(data).not.toBeUndefined()
+        done();
+    });
+
     it('should work on undefined state', function (done) {
         expect(data()).toBeUndefined();
         done();

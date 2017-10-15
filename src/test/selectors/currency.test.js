@@ -3,6 +3,11 @@ import currency from '../../selectors/currency'
 
 describe('currency selector', function () {
 
+    it('should exist', function (done) {
+        expect(currency).not.toBeUndefined()
+        done();
+    });
+
     it('should work on undefined state', function (done) {
         expect(currency()).toBeUndefined();
         done();

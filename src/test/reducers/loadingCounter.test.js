@@ -48,10 +48,10 @@ describe('loadingCounterReducer', function () {
         done();
     });
 
-    it('should decrement state on END_LOADING', function (done) {
+    it('should decrement state on STOP_LOADING', function (done) {
         const oldState = INITIAL_STATE + 1;
         const newState = loadingCounterReducer(oldState, {
-            type: 'END_LOADING'
+            type: 'STOP_LOADING'
         });
 
         expect(newState).toBe(oldState - 1);
@@ -59,10 +59,10 @@ describe('loadingCounterReducer', function () {
         done();
     });
 
-    it('should NOT decrement state below 0 on END_LOADING', function (done) {
+    it('should NOT decrement state below 0 on STOP_LOADING', function (done) {
         const oldState = INITIAL_STATE;
         const newState = loadingCounterReducer(oldState, {
-            type: 'END_LOADING'
+            type: 'STOP_LOADING'
         });
 
         expect(newState).toBeGreaterThan(-1);

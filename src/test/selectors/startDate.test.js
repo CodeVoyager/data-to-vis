@@ -3,6 +3,11 @@ import startDate from '../../selectors/startDate'
 
 describe('startDate selector', function () {
 
+    it('should exist', function (done) {
+        expect(startDate).not.toBeUndefined()
+        done();
+    });
+
     it('should work on undefined state', function (done) {
         expect(startDate()).toBeUndefined();
         done();
