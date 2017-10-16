@@ -81,4 +81,18 @@ body {
         fill: map-get($colors, color6);
         font-size: 13px;
     }
+    .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+    .focus {
+        stroke: none;
+        fill: map-get($colors, color6);
+        text-anchor: middle;
+    }
+    .focus-text {
+        stroke: none;
+        fill: map-get($colors, color1);
+        font-weight: bold;
+    }
 }

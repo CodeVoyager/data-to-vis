@@ -8,7 +8,8 @@ import {
 import store from '../store';
 const R = require('ramda');
 
-const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
+// const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
+const CORS_PROXY = 'http://localhost:8080/';
 const BASE_URL = 'https://api.coindesk.com/v1/bpi/';
 
 const getCurrencies = (callback) => {

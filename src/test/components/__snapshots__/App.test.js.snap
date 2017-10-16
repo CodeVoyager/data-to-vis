@@ -1300,6 +1300,15 @@ exports[`App component renders correctly 6`] = `
           strokeWidth={1.5}
           style={Object {}}
         />
+        <rect
+          className="overlay"
+          height={350}
+          onMouseMove={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={Object {}}
+          width={790}
+        />
       </g>
     </svg>
   </div>
@@ -2175,6 +2184,15 @@ exports[`App component renders correctly 9`] = `
           strokeWidth={1.5}
           style={Object {}}
         />
+        <rect
+          className="overlay"
+          height={350}
+          onMouseMove={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={Object {}}
+          width={790}
+        />
       </g>
     </svg>
   </div>
@@ -2757,6 +2775,15 @@ exports[`App component renders correctly 10`] = `
           strokeLinejoin="round"
           strokeWidth={1.5}
           style={Object {}}
+        />
+        <rect
+          className="overlay"
+          height={350}
+          onMouseMove={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={Object {}}
+          width={790}
         />
       </g>
     </svg>

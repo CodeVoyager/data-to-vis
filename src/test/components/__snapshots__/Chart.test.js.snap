@@ -411,6 +411,15 @@ exports[`Chart component renders correctly 1`] = `
         strokeWidth={1.5}
         style={Object {}}
       />
+      <rect
+        className="overlay"
+        height={300}
+        onMouseMove={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        style={Object {}}
+        width={600}
+      />
     </g>
   </svg>
 </div>

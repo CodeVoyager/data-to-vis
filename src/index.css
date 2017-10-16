@@ -92,3 +92,14 @@ body {
   .graph .anchor {
     fill: #CE513D;
     font-size: 13px; }
+  .graph .overlay {
+    fill: none;
+    pointer-events: all; }
+  .graph .focus {
+    stroke: none;
+    fill: #CE513D;
+    text-anchor: middle; }
+  .graph .focus-text {
+    stroke: none;
+    fill: #000;
+    font-weight: bold; }

@@ -25,6 +25,7 @@ import {
 } from './config'
 import Loader from './Loader';
 import Chart from './Chart';
+import moment from 'moment';
 const R = require('ramda');
 
 const mapStateToProps = state => {
@@ -55,6 +56,12 @@ class App extends Component {
     }
     componentDidMount () {
         api.getCurrencies(this.onCurrenciesAvailable);
+        if (R.isNil(this.props.startDate)) {
+            store.dispatch(setStartDateAction(moment().subtract(1, 'years')));
+        }
+        if (R.isNil(this.props.endDate)) {
+            store.dispatch(setEndDateAction(moment()));
+        }
     }
     onSubmit () {
         api.getData(this.props.startDate, this.props.endDate, this.props.currency, (data) => {
