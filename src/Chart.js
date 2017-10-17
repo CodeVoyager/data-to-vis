@@ -18,9 +18,20 @@ class Chart extends Component {
     constructor () {
         super(...arguments);
         this.state = {
-            tooltip: null
+            tooltip: null,
+            showTooltip: false
         }
     }
+
+    getMousePosition (event, element) {
+        const rect = element.getBoundingClientRect();
+
+        return {
+            x: event.clientX - rect.left,
+            y: event.clientY - rect.top
+        };
+    }
+
     onMouseMove (event) {
         let margin = this.props.margin || DEFAULT_MARGIN;
         let width = (this.props.width || DEFAULT_WIDTH) - margin.left - margin.right;
@@ -29,7 +40,7 @@ class Chart extends Component {
         let formatTime = d3TimeFormat.timeFormat(Chart.timeFormat);
         let dataElement;
         let selectedDate;
-        let leftPosition = event.offsetX - margin.left;
+        let leftPosition = this.getMousePosition(event, event.target).x;
         let tooltip = null;
 
         x.domain(d3Array.extent(_data, d => d[this.props.xKey]))
@@ -132,7 +143,7 @@ class Chart extends Component {
             focus = g
                 .append('g')
                 .attr('class', 'focus')
-                .attr("transform", "translate(" + x(this.state.tooltip.x) + "," + y(this.state.tooltip.y) + ")")
+                .attr("transform", "translate(" + x(this.state.tooltip.x) + "," + y(this.state.tooltip.y) + ")");
 
             focus.append('circle')
                 .attr('r', 4.5);
@@ -148,9 +159,9 @@ class Chart extends Component {
         g.append('rect')
             .attr('class', 'overlay')
             .attr('width', width)
-            .attr('height', height)
+            .attr('height', height);
 
-        let overlay = el.querySelector('.overlay')
+        let overlay = el.querySelector('.overlay');
 
         overlay.addEventListener('mouseover', this.onMouseOver.bind(this));
         overlay.addEventListener('mouseout', this.onMouseOut.bind(this));
