@@ -9,22 +9,22 @@ import {
     startDate,
     endDate,
     isLoading,
-} from './selectors';
+} from '../../selectors';
 import {
     setAvailableCurrencies as setAvailableCurrenciesAction,
     setCurrency as setCurrencyAction,
     setEndDate as setEndDateAction,
     setStartDate as setStartDateAction,
     setData as setDataAction
-} from './actions';
-import store from './store'
-import api from './api'
+} from '../../actions';
+import store from '../../store'
+import api from '../../api'
 import {
     DATE_FORMAT,
     PREFERED_CURRENCY
-} from './config'
-import Loader from './Loader';
-import Chart from './Chart';
+} from '../../config'
+import Loader from '../presentational/Loader';
+import Chart from '../presentational/Loader';
 import moment from 'moment';
 const R = require('ramda');
 
@@ -70,7 +70,7 @@ class App extends Component {
     }
     render() {
         let availableCurrenciesOptions = null;
-        let margin = {top: 20, right: 20, bottom: 30, left: 50};
+        const margin = {top: 20, right: 20, bottom: 30, left: 50};
 
         if (this.props.availableCurrencies && this.props.availableCurrencies.length) {
             availableCurrenciesOptions = this.props.availableCurrencies.map(currency => {

@@ -33,15 +33,15 @@ class Chart extends Component {
     }
 
     onMouseMove (event) {
-        let margin = this.props.margin || DEFAULT_MARGIN;
-        let width = (this.props.width || DEFAULT_WIDTH) - margin.left - margin.right;
-        let x = d3Scale.scaleTime().rangeRound([0, width]);
-        let _data = this.normalizeData(this.props.data);
-        let formatTime = d3TimeFormat.timeFormat(Chart.timeFormat);
-        let dataElement;
+        const margin = this.props.margin || DEFAULT_MARGIN;
+        const width = (this.props.width || DEFAULT_WIDTH) - margin.left - margin.right;
+        const x = d3Scale.scaleTime().rangeRound([0, width]);
+        const _data = this.normalizeData(this.props.data);
+        const formatTime = d3TimeFormat.timeFormat(Chart.timeFormat);
+        const leftPosition = this.getMousePosition(event, event.target).x;
         let selectedDate;
-        let leftPosition = this.getMousePosition(event, event.target).x;
         let tooltip = null;
+        let dataElement;
 
         x.domain(d3Array.extent(_data, d => d[this.props.xKey]))
 
@@ -60,13 +60,13 @@ class Chart extends Component {
 
     normalizeData (data) {
         let _data;
-        let parseTime = d3TimeFormat.timeParse(Chart.timeFormat);
+        const parseTime = d3TimeFormat.timeParse(Chart.timeFormat);
 
         if (data[0] instanceof Array) {
             _data = data.map(d => [parseTime(d[this.props.xKey]), d[this.props.yKey]])
         } else if (data[0] instanceof Object) {
             _data = data.map((d) => {
-                let newObject = {};
+                const newObject = {};
                 newObject[this.props.xKey] = parseTime(d[this.props.xKey]);
                 newObject[this.props.yKey] = Number(d[this.props.yKey]);
 
@@ -102,19 +102,19 @@ class Chart extends Component {
             throw new Error('yKey is required');
         }
 
-        let el = ReactFauxDOM.createElement('svg');
-        let margin = this.props.margin || DEFAULT_MARGIN;
-        let svg = d3Selection.select(el);
-        let width = (this.props.width || DEFAULT_WIDTH) - margin.left - margin.right;
-        let height = (this.props.height || DEFAULT_HEIGHT) - margin.top - margin.bottom;
-        let g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-        let x = d3Scale.scaleTime().rangeRound([0, width]);
-        let y = d3Scale.scaleLinear().rangeRound([height, 0]);
-        let line = d3Shape.line()
+        const el = ReactFauxDOM.createElement('svg');
+        const margin = this.props.margin || DEFAULT_MARGIN;
+        const svg = d3Selection.select(el);
+        const width = (this.props.width || DEFAULT_WIDTH) - margin.left - margin.right;
+        const height = (this.props.height || DEFAULT_HEIGHT) - margin.top - margin.bottom;
+        const g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+        const x = d3Scale.scaleTime().rangeRound([0, width]);
+        const y = d3Scale.scaleLinear().rangeRound([height, 0]);
+        const line = d3Shape.line()
             .x(d => x(d[this.props.xKey]))
             .y(d => y(d[this.props.yKey]))
-        let _data = this.normalizeData(this.props.data);
-        let formatTime = d3TimeFormat.timeFormat(Chart.timeFormat);
+        const _data = this.normalizeData(this.props.data);
+        const formatTime = d3TimeFormat.timeFormat(Chart.timeFormat);
         let focus;
 
         svg.attr('width', this.props.width || DEFAULT_WIDTH);
@@ -161,7 +161,7 @@ class Chart extends Component {
             .attr('width', width)
             .attr('height', height);
 
-        let overlay = el.querySelector('.overlay');
+        const overlay = el.querySelector('.overlay');
 
         overlay.addEventListener('mouseover', this.onMouseOver.bind(this));
         overlay.addEventListener('mouseout', this.onMouseOut.bind(this));

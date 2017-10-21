@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Chart from '../../Chart';
+import Chart from '../../../components/presentational/Chart';
 import renderer from 'react-test-renderer';
 
 describe('Chart component', function () {
