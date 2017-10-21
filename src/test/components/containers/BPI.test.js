@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {App} from '../../../components/containers/App';
+import {BPI} from '../../../components/containers/BPI';
 import renderer from 'react-test-renderer';
 import moment from 'moment';
 
 
-describe('App component', function () {
+describe('BPI component', function () {
     it('renders without crashing', function () {
         const div = document.createElement('div');
-        ReactDOM.render(<App />, div);
+        ReactDOM.render(<BPI />, div);
     });
 
     it('renders correctly', function () {
@@ -21,44 +21,44 @@ describe('App component', function () {
             ['2013-09-02', 127.3648]
         ];
 
-        const tree1 = renderer.create(<App />).toJSON();
+        const tree1 = renderer.create(<BPI />).toJSON();
         expect(tree1).toMatchSnapshot();
 
-        const tree2 = renderer.create(<App startDate={startDate} />).toJSON();
+        const tree2 = renderer.create(<BPI startDate={startDate} />).toJSON();
         expect(tree2).toMatchSnapshot();
 
-        const tree3 = renderer.create(<App endDate={endDate} />).toJSON();
+        const tree3 = renderer.create(<BPI endDate={endDate} />).toJSON();
         expect(tree3).toMatchSnapshot();
 
-        const tree4 = renderer.create(<App availableCurrencies={currencies} />).toJSON();
+        const tree4 = renderer.create(<BPI availableCurrencies={currencies} />).toJSON();
         expect(tree4).toMatchSnapshot();
 
-        const tree5 = renderer.create(<App currency={currency} />).toJSON();
+        const tree5 = renderer.create(<BPI currency={currency} />).toJSON();
         expect(tree5).toMatchSnapshot();
 
-        const tree6 = renderer.create(<App data={data} />).toJSON();
+        const tree6 = renderer.create(<BPI data={data} />).toJSON();
         expect(tree6).toMatchSnapshot();
 
-        const tree7 = renderer.create(<App isLoading={false} />).toJSON();
+        const tree7 = renderer.create(<BPI isLoading={false} />).toJSON();
         expect(tree7).toMatchSnapshot();
 
-        const tree8 = renderer.create(<App isLoading={true} />).toJSON();
+        const tree8 = renderer.create(<BPI isLoading={true} />).toJSON();
         expect(tree8).toMatchSnapshot();
 
-        const tree9 = renderer.create(<App data={data} isLoading={true} currency={currency} availableCurrencies={currencies} startDate={startDate} endDate={endDate} />).toJSON();
+        const tree9 = renderer.create(<BPI data={data} isLoading={true} currency={currency} availableCurrencies={currencies} startDate={startDate} endDate={endDate} />).toJSON();
         expect(tree9).toMatchSnapshot();
 
-        const tree10 = renderer.create(<App data={data} isLoading={false} currency={currency} availableCurrencies={currencies} startDate={startDate} endDate={endDate} />).toJSON();
+        const tree10 = renderer.create(<BPI data={data} isLoading={false} currency={currency} availableCurrencies={currencies} startDate={startDate} endDate={endDate} />).toJSON();
         expect(tree10).toMatchSnapshot();
     });
 
     it('should have onCurrencyChange method', function () {
-        expect(App.prototype.onCurrencyChange).not.toBeUndefined();
+        expect(BPI.prototype.onCurrencyChange).not.toBeUndefined();
     });
 
     it('should onCurrencyChange pass valid data to props.onCurrencyChange on invoke', function (done) {
         const fn = jest.fn();
-        const component = renderer.create(<App onCurrencyChange={fn} />);
+        const component = renderer.create(<BPI onCurrencyChange={fn} />);
         const VALUE = 'VALUE';
 
         component.getInstance().onCurrencyChange({
@@ -74,12 +74,12 @@ describe('App component', function () {
     });
 
     it('should have onCurrenciesAvailable method', function () {
-        expect(App.prototype.onCurrenciesAvailable).not.toBeUndefined();
+        expect(BPI.prototype.onCurrenciesAvailable).not.toBeUndefined();
     });
 
     it('should onCurrenciesAvailable pass valid data to props.onCurrenciesAvailable on invoke', function (done) {
         const fn = jest.fn();
-        const component = renderer.create(<App onCurrenciesAvailable={fn} />);
+        const component = renderer.create(<BPI onCurrenciesAvailable={fn} />);
         const DATA = 'DATA';
 
         component.getInstance().onCurrenciesAvailable(DATA);
@@ -91,7 +91,7 @@ describe('App component', function () {
     });
 
     it('should have onSubmit method', function () {
-        expect(App.prototype.onSubmit).not.toBeUndefined();
+        expect(BPI.prototype.onSubmit).not.toBeUndefined();
     });
 
     it('should run onNilStartDate function on falsy start date', function (done) {
@@ -99,7 +99,7 @@ describe('App component', function () {
         const onNilStartDateMock = jest.fn();
         const div = document.createElement('div');
 
-        ReactDOM.render(<App endDate={endDate} onNilStartDate={onNilStartDateMock}/>, div);
+        ReactDOM.render(<BPI endDate={endDate} onNilStartDate={onNilStartDateMock}/>, div);
         expect(onNilStartDateMock.mock.calls.length).toBe(1);
 
         done();
@@ -110,7 +110,7 @@ describe('App component', function () {
         const onNilEndDateMock = jest.fn();
         const div = document.createElement('div');
 
-        ReactDOM.render(<App startDate={startDate} onNilEndDate={onNilEndDateMock}/>, div);
+        ReactDOM.render(<BPI startDate={startDate} onNilEndDate={onNilEndDateMock}/>, div);
         expect(onNilEndDateMock.mock.calls.length).toBe(1);
         done();
     });
