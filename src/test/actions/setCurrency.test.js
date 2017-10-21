@@ -21,19 +21,19 @@ describe('setCurrencyAction', function () {
         expect(setCurrencyAction(undefined))
         .toEqual({
             type: ACTION_NAME,
-            currency: null
+            payload: null
         });
 
         expect(setCurrencyAction(null))
         .toEqual({
             type: ACTION_NAME,
-            currency: null
+            payload: null
         });
 
         expect(setCurrencyAction('CURRENCY'))
         .toEqual({
             type: ACTION_NAME,
-            currency: 'CURRENCY'
+            payload: 'CURRENCY'
         });
 
         done();
@@ -44,7 +44,7 @@ describe('setCurrencyAction', function () {
         expect(setCurrencyAction('CURRENCY', 'Extra 1', 'Extra 2', 'Extra 3'))
         .toEqual({
             type: ACTION_NAME,
-            currency: 'CURRENCY'
+            payload: 'CURRENCY'
         });
 
         done();

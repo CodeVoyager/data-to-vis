@@ -22,19 +22,19 @@ describe('setStartDateAction', function () {
         expect(setStartDateAction(undefined))
         .toEqual({
             type: ACTION_NAME,
-            startDate: null
+            payload: null
         });
 
         expect(setStartDateAction(null))
         .toEqual({
             type: ACTION_NAME,
-            startDate: null
+            payload: null
         });
 
         expect(setStartDateAction('START_DATE'))
         .toEqual({
             type: ACTION_NAME,
-            startDate: 'START_DATE'
+            payload: 'START_DATE'
         });
 
         done();
@@ -45,7 +45,7 @@ describe('setStartDateAction', function () {
         expect(setStartDateAction('START_DATE', 'Extra 1', 'Extra 2', 'Extra 3'))
         .toEqual({
             type: ACTION_NAME,
-            startDate: 'START_DATE'
+            payload: 'START_DATE'
         });
 
         done();

@@ -34,7 +34,7 @@ describe('startDate reducer', function () {
         const oldState = INITIAL_STATE;
         const newState = startDateReducer(INITIAL_STATE, {
             type: 'SET_START_DATE',
-            startDate: NEW_START_DATE
+            payload: NEW_START_DATE
         });
 
         expect(newState).not.toBe(oldState);
@@ -45,7 +45,7 @@ describe('startDate reducer', function () {
         const oldState = INITIAL_STATE;
         const newState = startDateReducer(INITIAL_STATE, {
             type: 'SET_START_DATE',
-            startDate: INITIAL_STATE
+            payload: INITIAL_STATE
         });
 
         expect(newState).toEqual(oldState);
@@ -58,7 +58,7 @@ describe('startDate reducer', function () {
 
         const newState = startDateReducer(INITIAL_STATE, {
             type: 'SET_START_DATE',
-            startDate: NEW_START_DATE
+            payload: NEW_START_DATE
         });
 
         expect(newState).toBe(NEW_START_DATE);

@@ -22,25 +22,25 @@ describe('setAvailableCurrenciesAction', function () {
         expect(setAvailableCurrenciesAction(undefined))
         .toEqual({
             type: ACTION_NAME,
-            currencies: []
+            payload: []
         });
 
         expect(setAvailableCurrenciesAction(null))
         .toEqual({
             type: ACTION_NAME,
-            currencies: []
+            payload: []
         });
 
         expect(setAvailableCurrenciesAction([]))
         .toEqual({
             type: ACTION_NAME,
-            currencies: []
+            payload: []
         });
 
         expect(setAvailableCurrenciesAction(AVAILABLE_CURRENCIES))
         .toEqual({
             type: ACTION_NAME,
-            currencies: AVAILABLE_CURRENCIES
+            payload: AVAILABLE_CURRENCIES
         });
 
         done();
@@ -51,7 +51,7 @@ describe('setAvailableCurrenciesAction', function () {
         expect(setAvailableCurrenciesAction(AVAILABLE_CURRENCIES, 'Extra 1', 'Extra 2', 'Extra 3'))
         .toEqual({
             type: ACTION_NAME,
-            currencies: AVAILABLE_CURRENCIES
+            payload: AVAILABLE_CURRENCIES
         });
 
         done();

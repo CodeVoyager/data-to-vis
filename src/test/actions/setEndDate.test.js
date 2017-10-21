@@ -21,19 +21,19 @@ describe('setEndDateAction', function () {
         expect(setEndDateAction(undefined))
         .toEqual({
             type: ACTION_NAME,
-            endDate: null
+            payload: null
         });
 
         expect(setEndDateAction(null))
         .toEqual({
             type: ACTION_NAME,
-            endDate: null
+            payload: null
         });
 
         expect(setEndDateAction('END_DATE'))
         .toEqual({
             type: ACTION_NAME,
-            endDate: 'END_DATE'
+            payload: 'END_DATE'
         });
 
         done();
@@ -44,7 +44,7 @@ describe('setEndDateAction', function () {
         expect(setEndDateAction('END_DATE', 'Extra 1', 'Extra 2', 'Extra 3'))
         .toEqual({
             type: ACTION_NAME,
-            endDate: 'END_DATE'
+            payload: 'END_DATE'
         });
 
         done();

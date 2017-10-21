@@ -32,7 +32,7 @@ describe('dataReducer', function () {
         const oldState = INITIAL_STATE;
         const newState = dataReducer(oldState, {
             type: 'SET_DATA',
-            data: [['DATE_1', 1], ['DATE_2', 2], ['DATE_3', 3]]
+            payload: [['DATE_1', 1], ['DATE_2', 2], ['DATE_3', 3]]
         });
 
         expect(newState).not.toBe(oldState);

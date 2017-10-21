@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import {connect} from 'react-redux'
@@ -38,34 +39,51 @@ const mapStateToProps = state => {
         isLoading: isLoading(state),
     };
 }
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        onNilStartDate: () => {
+            dispatch(setStartDateAction(moment().subtract(1, 'years')));
+        },
+        onNilEndDate: () => {
+            dispatch(setEndDateAction(moment()));
+        },
+        onEndDateChange: setEndDateAction,
+        onStartDateChange: setStartDateAction,
+        onCurrencyChange: (currency) => {
+            dispatch(setCurrencyAction(currency));
+        },
+        onCurrenciesAvailable: (currencies) => {
+            let currency = R.find(R.equals(PREFERED_CURRENCY), currencies);
+
+            dispatch(setCurrencyAction(currency || currencies[0]));
+            dispatch(setAvailableCurrenciesAction(currencies));
+        },
+        onDataAvailable: (data) => {
+            dispatch(setDataAction(data));
+        }
+    }
+}
+
 class App extends Component {
-    onStartDateChange (date) {
-        store.dispatch(setStartDateAction(date));
-    }
-    onEndDateChange (date) {
-        store.dispatch(setEndDateAction(date));
-    }
     onCurrencyChange (event) {
-        store.dispatch(setCurrencyAction(event.target.value));
+        this.props.onCurrencyChange(event.target.value);
     }
     onCurrenciesAvailable (currencies) {
-        let currency = R.find(R.equals(PREFERED_CURRENCY), currencies);
-
-        store.dispatch(setCurrencyAction(currency || currencies[0]));
-        store.dispatch(setAvailableCurrenciesAction(currencies));
+        this.props.onCurrenciesAvailable(currencies);
     }
     componentDidMount () {
         api.getCurrencies(this.onCurrenciesAvailable);
-        if (R.isNil(this.props.startDate)) {
-            store.dispatch(setStartDateAction(moment().subtract(1, 'years')));
+        if (R.isNil(this.props.startDate) && this.props.onNilStartDate) {
+            this.props.onNilStartDate();
         }
-        if (R.isNil(this.props.endDate)) {
-            store.dispatch(setEndDateAction(moment()));
+        if (R.isNil(this.props.endDate) && this.props.onNilEndDate) {
+            this.props.onNilEndDate();
         }
     }
     onSubmit () {
         api.getData(this.props.startDate, this.props.endDate, this.props.currency, (data) => {
-            store.dispatch(setDataAction(data));
+            this.props.onDataAvailable(data);
         });
     }
     render() {
@@ -94,7 +112,7 @@ class App extends Component {
                                     <DatePicker
                                         className="input"
                                         selected={this.props.startDate}
-                                        onChange={this.onStartDateChange}
+                                        onChange={this.props.onStartDateChange}
                                         maxDate={this.props.endDate}
                                         dateFormat={DATE_FORMAT}
                                         placeholderText="Click to select start date"
@@ -104,7 +122,7 @@ class App extends Component {
                                     <DatePicker
                                         className="input"
                                         selected={this.props.endDate}
-                                        onChange={this.onEndDateChange}
+                                        onChange={this.props.onEndDateChange}
                                         minDate={this.props.startDate}
                                         dateFormat={DATE_FORMAT}
                                         placeholderText="Click to select end date"
@@ -165,5 +183,5 @@ class App extends Component {
     }
 }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
 export {App};

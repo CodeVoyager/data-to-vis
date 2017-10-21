@@ -34,7 +34,7 @@ describe('availableCurrenciesReducer', function () {
         const oldState = [...INITIAL_STATE];
         const newState = availableCurrenciesReducer(oldState, {
             type: 'SET_AVAILABLE_CURRENCIES',
-            currencies: [
+            payload: [
                 'CURRENCY_1',
                 'CURRENCY_2',
                 'CURRENCY_3',

@@ -36,7 +36,7 @@ describe('Currency reducer', function () {
         const oldState = INITIAL_STATE;
         const newState = currencyReducer(oldState, {
             type: 'SET_CURRENCY',
-            currency: CURRENCY
+            payload: CURRENCY
         });
 
         expect(newState).not.toBe(oldState);
@@ -48,7 +48,7 @@ describe('Currency reducer', function () {
         const oldState = INITIAL_STATE;
         const newState = currencyReducer(oldState, {
             type: 'SET_CURRENCY',
-            currency: 'NEW_CURRENCY'
+            payload: 'NEW_CURRENCY'
         });
 
         expect(newState).not.toEqual(oldState);

@@ -206,7 +206,7 @@ exports[`App component renders correctly 2`] = `
                   tabIndex={undefined}
                   title={undefined}
                   type="text"
-                  value="2011-10-31"
+                  value="2017-10-01"
                 />
               </div>
             </div>
@@ -386,7 +386,7 @@ exports[`App component renders correctly 3`] = `
                   tabIndex={undefined}
                   title={undefined}
                   type="text"
-                  value="2011-10-31"
+                  value="2017-10-01"
                 />
               </div>
             </div>
@@ -1259,7 +1259,7 @@ exports[`App component renders correctly 9`] = `
                   tabIndex={undefined}
                   title={undefined}
                   type="text"
-                  value="2011-10-31"
+                  value="2017-10-01"
                 />
               </div>
             </div>
@@ -1293,7 +1293,7 @@ exports[`App component renders correctly 9`] = `
                   tabIndex={undefined}
                   title={undefined}
                   type="text"
-                  value="2011-10-31"
+                  value="2017-10-01"
                 />
               </div>
             </div>
@@ -1436,7 +1436,7 @@ exports[`App component renders correctly 10`] = `
                   tabIndex={undefined}
                   title={undefined}
                   type="text"
-                  value="2011-10-31"
+                  value="2017-10-01"
                 />
               </div>
             </div>
@@ -1470,7 +1470,7 @@ exports[`App component renders correctly 10`] = `
                   tabIndex={undefined}
                   title={undefined}
                   type="text"
-                  value="2011-10-31"
+                  value="2017-10-01"
                 />
               </div>
             </div>

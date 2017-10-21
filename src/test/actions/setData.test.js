@@ -22,25 +22,25 @@ describe('setDataAction', function () {
         expect(setDataAction(undefined))
         .toEqual({
             type: ACTION_NAME,
-            data: []
+            payload: []
         });
 
         expect(setDataAction(null))
         .toEqual({
             type: ACTION_NAME,
-            data: []
+            payload: []
         });
 
         expect(setDataAction([]))
         .toEqual({
             type: ACTION_NAME,
-            data: []
+            payload: []
         });
 
         expect(setDataAction(DATA))
         .toEqual({
             type: ACTION_NAME,
-            data: DATA
+            payload: DATA
         });
 
         done();
@@ -51,7 +51,7 @@ describe('setDataAction', function () {
         expect(setDataAction(DATA, 'Extra 1', 'Extra 2', 'Extra 3'))
         .toEqual({
             type: ACTION_NAME,
-            data: DATA
+            payload: DATA
         });
 
         done();
