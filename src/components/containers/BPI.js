@@ -3,14 +3,13 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import {connect} from 'react-redux'
 import {
-    Link
-} from 'react-router-dom';
-import {
     availableCurrencies,
     currency,
     data,
     startDate,
     endDate,
+} from '../../selectors/bpi';
+import {
     isLoading,
 } from '../../selectors';
 import {
@@ -19,14 +18,14 @@ import {
     setEndDate as setEndDateAction,
     setStartDate as setStartDateAction,
     setData as setDataAction
-} from '../../actions';
-import api from '../../api'
+} from '../../actions/bpi';
+import {bpi as api} from '../../api'
 import {
     DATE_FORMAT,
     PREFERED_CURRENCY
 } from '../../config'
 import Loader from '../presentational/Loader';
-import Chart from '../presentational/Loader';
+import Chart from '../presentational/Chart';
 import moment from 'moment';
 const R = require('ramda');
 
@@ -103,9 +102,6 @@ class BPI extends Component {
 
         return (
             <div className="bpi">
-                <div className="buttons">
-                    <Link className="button" to="/">Go back</Link>
-                </div>
                 <header className="header">
                     <h1 className="title">Data to Vis</h1>
                     <h2 className="sub-title">Bitcoin price index chart</h2>
@@ -147,7 +143,7 @@ class BPI extends Component {
                                 {
                                     (this.props.availableCurrencies && this.props.availableCurrencies.length)
                                     ? (
-                                        <select className="input" value={this.props.currency} onChange={this.onCurrencyChange}>
+                                        <select className="input" value={this.props.currency} onChange={this.onCurrencyChange.bind(this)}>
                                             {availableCurrenciesOptions}
                                         </select>
                                     ) : null
@@ -182,9 +178,7 @@ class BPI extends Component {
                     ) : null
                 }
                 {
-                    this.props.isLoading ? (
-                        <Loader/>
-                    ) : null
+                    this.props.isLoading ? (<Loader/>) : null
                 }
             </div>
         );
