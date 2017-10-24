@@ -29,74 +29,74 @@ exports[`BPI component renders correctly 1`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
@@ -125,20 +125,89 @@ exports[`BPI component renders correctly 1`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={true}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -175,74 +244,74 @@ exports[`BPI component renders correctly 2`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value="2017-10-01"
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value="2017-10-01"
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
@@ -271,20 +340,89 @@ exports[`BPI component renders correctly 2`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={true}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -321,74 +459,74 @@ exports[`BPI component renders correctly 3`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value="2017-10-01"
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value="2017-10-01"
+              />
             </div>
           </div>
         </div>
@@ -417,20 +555,89 @@ exports[`BPI component renders correctly 3`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={true}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -467,74 +674,74 @@ exports[`BPI component renders correctly 4`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
@@ -580,20 +787,89 @@ exports[`BPI component renders correctly 4`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={false}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -630,74 +906,74 @@ exports[`BPI component renders correctly 5`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
@@ -726,20 +1002,89 @@ exports[`BPI component renders correctly 5`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={true}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -776,74 +1121,74 @@ exports[`BPI component renders correctly 6`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
@@ -872,20 +1217,89 @@ exports[`BPI component renders correctly 6`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={true}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -1344,74 +1758,74 @@ exports[`BPI component renders correctly 7`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
@@ -1440,20 +1854,89 @@ exports[`BPI component renders correctly 7`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={true}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -1490,74 +1973,74 @@ exports[`BPI component renders correctly 8`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
             </div>
           </div>
         </div>
@@ -1586,20 +2069,89 @@ exports[`BPI component renders correctly 8`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={true}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -1643,74 +2195,74 @@ exports[`BPI component renders correctly 9`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value="2017-10-01"
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value="2017-10-01"
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value="2017-10-01"
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value="2017-10-01"
+              />
             </div>
           </div>
         </div>
@@ -1756,20 +2308,89 @@ exports[`BPI component renders correctly 9`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={false}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -2235,74 +2856,74 @@ exports[`BPI component renders correctly 10`] = `
       >
         1. Select dates
       </div>
+    </div>
+    <div
+      className="cols"
+    >
       <div
-        className="cols"
+        className="col-half"
       >
-        <div
-          className="col-half"
-        >
-          <div>
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select start date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value="2017-10-01"
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value="2017-10-01"
+              />
             </div>
           </div>
         </div>
-        <div
-          className="col-half"
-        >
-          <div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
             <div
-              className="react-datepicker-wrapper"
+              className="react-datepicker__input-container"
             >
-              <div
-                className="react-datepicker__input-container"
-              >
-                <input
-                  autoComplete={undefined}
-                  autoFocus={undefined}
-                  className="input"
-                  disabled={false}
-                  id={undefined}
-                  name={undefined}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Click to select end date"
-                  readOnly={undefined}
-                  required={undefined}
-                  tabIndex={undefined}
-                  title={undefined}
-                  type="text"
-                  value="2017-10-01"
-                />
-              </div>
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value="2017-10-01"
+              />
             </div>
           </div>
         </div>
@@ -2348,20 +2969,1440 @@ exports[`BPI component renders correctly 10`] = `
         className="header"
       >
         3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
         <div
-          className="cols"
+          className="col-full"
         >
-          <div
-            className="col-full"
+          <button
+            className="input submit"
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              className="input submit"
-              disabled={false}
-              onClick={[Function]}
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
             >
-              Submit
-            </button>
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="graph graph-line"
+  >
+    <svg
+      height={400}
+      style={Object {}}
+      width={860}
+    >
+      <g
+        style={Object {}}
+        transform="translate(50,20)"
+      >
+        <g
+          fill="none"
+          fontFamily="sans-serif"
+          fontSize={10}
+          style={Object {}}
+          textAnchor="middle"
+          transform="translate(0,350)"
+        >
+          <path
+            className="domain"
+            d="M0.5,6V0.5H790.5V6"
+            stroke="#000"
+            style={Object {}}
+          />
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              September
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(99.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              03 AM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(198.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              06 AM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(296.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              09 AM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(395.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              12 PM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(494.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              03 PM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(593.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              06 PM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(691.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              09 PM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(790.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              Mon 02
+            </text>
+          </g>
+        </g>
+        <g
+          fill="none"
+          fontFamily="sans-serif"
+          fontSize={10}
+          style={Object {}}
+          textAnchor="end"
+        >
+          <path
+            className="domain"
+            d="M-6,350.5H0.5V0.5H-6"
+            stroke="#000"
+            style={Object {}}
+          />
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,336.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.4
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,297.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.5
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,258.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.6
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,219.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.7
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,180.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.8
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,141.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.9
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,102.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              128.0
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,62.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              128.1
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,23.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              128.2
+            </text>
+          </g>
+        </g>
+        <path
+          className="path"
+          d="M0,0L790,350"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          style={Object {}}
+        />
+        <rect
+          className="overlay"
+          height={350}
+          onMouseMove={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={Object {}}
+          width={790}
+        />
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`BPI component renders correctly 11`] = `
+<div
+  className="bpi"
+>
+  <header
+    className="header"
+  >
+    <h1
+      className="title"
+    >
+      Data to Vis
+    </h1>
+    <h2
+      className="sub-title"
+    >
+      Bitcoin price index chart
+    </h2>
+  </header>
+  <div
+    className="steps"
+  >
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        1. Select dates
+      </div>
+    </div>
+    <div
+      className="cols"
+    >
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
+            <div
+              className="react-datepicker__input-container"
+            >
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
+            <div
+              className="react-datepicker__input-container"
+            >
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        2. Select currency
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-full"
+        />
+      </div>
+    </div>
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={[Function]}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        />
+        <div
+          className="col-half highlight"
+        />
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        />
+        <div
+          className="col-half highlight"
+        />
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        />
+        <div
+          className="col-half highlight"
+        />
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
+            >
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="graph graph-line"
+  >
+    <svg
+      height={400}
+      style={Object {}}
+      width={860}
+    >
+      <g
+        style={Object {}}
+        transform="translate(50,20)"
+      >
+        <g
+          fill="none"
+          fontFamily="sans-serif"
+          fontSize={10}
+          style={Object {}}
+          textAnchor="middle"
+          transform="translate(0,350)"
+        >
+          <path
+            className="domain"
+            d="M0.5,6V0.5H790.5V6"
+            stroke="#000"
+            style={Object {}}
+          />
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              September
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(99.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              03 AM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(198.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              06 AM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(296.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              09 AM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(395.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              12 PM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(494.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              03 PM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(593.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              06 PM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(691.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              09 PM
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(790.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              Mon 02
+            </text>
+          </g>
+        </g>
+        <g
+          fill="none"
+          fontFamily="sans-serif"
+          fontSize={10}
+          style={Object {}}
+          textAnchor="end"
+        >
+          <path
+            className="domain"
+            d="M-6,350.5H0.5V0.5H-6"
+            stroke="#000"
+            style={Object {}}
+          />
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,336.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.4
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,297.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.5
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,258.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.6
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,219.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.7
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,180.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.8
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,141.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              127.9
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,102.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              128.0
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,62.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              128.1
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(0,23.5)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              x2={-6}
+            />
+            <text
+              dy="0.32em"
+              fill="#000"
+              style={Object {}}
+              x={-9}
+            >
+              128.2
+            </text>
+          </g>
+        </g>
+        <path
+          className="path"
+          d="M0,0L790,350"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          style={Object {}}
+        />
+        <rect
+          className="overlay"
+          height={350}
+          onMouseMove={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={Object {}}
+          width={790}
+        />
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`BPI component renders correctly 12`] = `
+<div
+  className="bpi"
+>
+  <header
+    className="header"
+  >
+    <h1
+      className="title"
+    >
+      Data to Vis
+    </h1>
+    <h2
+      className="sub-title"
+    >
+      Bitcoin price index chart
+    </h2>
+  </header>
+  <div
+    className="steps"
+  >
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        1. Select dates
+      </div>
+    </div>
+    <div
+      className="cols"
+    >
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
+            <div
+              className="react-datepicker__input-container"
+            >
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value="2017-10-01"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
+            <div
+              className="react-datepicker__input-container"
+            >
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value="2017-10-01"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        2. Select currency
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-full"
+        >
+          <select
+            className="input"
+            onChange={[Function]}
+            value="USD"
+          >
+            <option
+              value="USD"
+            >
+              USD
+            </option>
+            <option
+              value="PLN"
+            >
+              PLN
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        />
+        <div
+          className="col-half highlight"
+        />
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        />
+        <div
+          className="col-half highlight"
+        />
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        />
+        <div
+          className="col-half highlight"
+        />
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
+            >
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value=""
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={undefined}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>

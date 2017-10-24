@@ -20,6 +20,11 @@ describe('BPI component', function () {
             ['2013-09-01', 128.2597],
             ['2013-09-02', 127.3648]
         ];
+        const highlights = [
+            ['2013-09-01', 'HIGHLIGHT'],
+            ['2013-09-02', null],
+            ['2014-09-02', undefined],
+        ];
 
         const tree1 = renderer.create(<BPI />).toJSON();
         expect(tree1).toMatchSnapshot();
@@ -50,6 +55,12 @@ describe('BPI component', function () {
 
         const tree10 = renderer.create(<BPI data={data} isLoading={false} currency={currency} availableCurrencies={currencies} startDate={startDate} endDate={endDate} />).toJSON();
         expect(tree10).toMatchSnapshot();
+
+        const tree11 = renderer.create(<BPI data={data} highlights={highlights} />).toJSON();
+        expect(tree11).toMatchSnapshot();
+
+        const tree12 = renderer.create(<BPI data={data} highlights={highlights} isLoading={false} currency={currency} availableCurrencies={currencies} startDate={startDate} endDate={endDate} />).toJSON();
+        expect(tree12).toMatchSnapshot();
     });
 
     it('should have onCurrencyChange method', function () {
@@ -115,4 +126,12 @@ describe('BPI component', function () {
         done();
     });
 
+    it('should run onComponentDidMount function on mount when provided', function (done) {
+        const onComponentDidMountMock = jest.fn();
+        const div = document.createElement('div');
+
+        ReactDOM.render(<BPI onComponentDidMount={onComponentDidMountMock}/>, div);
+        expect(onComponentDidMountMock.mock.calls.length).toBe(1);
+        done();
+    });
 });

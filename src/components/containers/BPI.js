@@ -8,6 +8,8 @@ import {
     data,
     startDate,
     endDate,
+    highlights,
+    currentHighlight
 } from '../../selectors/bpi';
 import {
     isLoading,
@@ -17,7 +19,12 @@ import {
     setCurrency as setCurrencyAction,
     setEndDate as setEndDateAction,
     setStartDate as setStartDateAction,
-    setData as setDataAction
+    setData as setDataAction,
+    setHighLights as setHighLightsAction,
+    setCurrentHighlightDate as setCurrentHighlightDateAction,
+    setCurrentHighlightDescription as setCurrentHighlightDescriptionAction,
+    currentHighlightReset as currentHighlightResetAction,
+    addHighLight as addHighLightAction
 } from '../../actions/bpi';
 import {bpi as api} from '../../api'
 import {
@@ -37,13 +44,35 @@ const mapStateToProps = state => {
         startDate: startDate(state),
         endDate: endDate(state),
         isLoading: isLoading(state),
+        highlights: highlights(state),
+        currentHighlight: currentHighlight(state),
     };
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
+        onComponentDidMount: () => {
+            dispatch(setHighLightsAction([
+                {
+                    date: '2006-10-01',
+                    description: 'Mt. Gox founding'
+                },
+                {
+                    date: '2015-01-06',
+                    description: 'Mt. Gox Bankruptcy'
+                },
+                {
+                    date: '2016-05-01',
+                    description: 'Mt. Gox Bankruptcy (Final)'
+                },
+                {
+                    date: '2017-04-01',
+                    description: 'Bitfinex announced that it was no longer able to let users withdraw their funds in USD'
+                },
+            ]));
+        },
         onNilStartDate: () => {
-            dispatch(setStartDateAction(moment().subtract(1, 'years')));
+            dispatch(setStartDateAction(moment().subtract(5, 'years')));
         },
         onNilEndDate: () => {
             dispatch(setEndDateAction(moment()));
@@ -63,8 +92,21 @@ const mapDispatchToProps = (dispatch, ownProps) => {
             dispatch(setCurrencyAction(currency || currencies[0]));
             dispatch(setAvailableCurrenciesAction(currencies));
         },
-        onDataAvailable: (data) => {
-            dispatch(setDataAction(data));
+        onDataAvailable: (payload) => {
+            dispatch(setDataAction(payload));
+        },
+        onHighlightDateDescription: (event) => {
+            dispatch(setCurrentHighlightDescriptionAction(event.target.value));
+        },
+        onCurrentHighlightDateChange: (payload) => {
+            dispatch(setCurrentHighlightDateAction(payload));
+        },
+        onCurrentHighlightSubmit: function () {
+            dispatch(addHighLightAction({
+                date: this.props.currentHighlight.date.format(DATE_FORMAT),
+                description: this.props.currentHighlight.description,
+            }));
+            dispatch(currentHighlightResetAction());
         }
     }
 }
@@ -78,6 +120,9 @@ class BPI extends Component {
     }
     componentDidMount () {
         api.getCurrencies(this.onCurrenciesAvailable.bind(this));
+        if (this.props.onComponentDidMount) {
+            this.props.onComponentDidMount();
+        }
         if (R.isNil(this.props.startDate) && this.props.onNilStartDate) {
             this.props.onNilStartDate();
         }
@@ -93,6 +138,7 @@ class BPI extends Component {
     render() {
         let availableCurrenciesOptions = null;
         const margin = {top: 20, right: 20, bottom: 30, left: 50};
+        const highlights = this.props.highlights || [];
 
         if (this.props.availableCurrencies && this.props.availableCurrencies.length) {
             availableCurrenciesOptions = this.props.availableCurrencies.map(currency => {
@@ -111,27 +157,27 @@ class BPI extends Component {
                         <div className="header">
                             1. Select dates
                         </div>
-                        <div className="cols">
-                            <div className="col-half">
-                                    <DatePicker
-                                        className="input"
-                                        selected={this.props.startDate}
-                                        onChange={this.props.onStartDateChange}
-                                        maxDate={this.props.endDate}
-                                        dateFormat={DATE_FORMAT}
-                                        placeholderText="Click to select start date"
-                                    />
-                                </div>
-                                <div className="col-half">
-                                    <DatePicker
-                                        className="input"
-                                        selected={this.props.endDate}
-                                        onChange={this.props.onEndDateChange}
-                                        minDate={this.props.startDate}
-                                        dateFormat={DATE_FORMAT}
-                                        placeholderText="Click to select end date"
-                                    />
+                    </div>
+                    <div className="cols">
+                        <div className="col-half">
+                                <DatePicker
+                                    className="input"
+                                    selected={this.props.startDate}
+                                    onChange={this.props.onStartDateChange}
+                                    maxDate={this.props.endDate}
+                                    dateFormat={DATE_FORMAT}
+                                    placeholderText="Click to select start date"
+                                />
                             </div>
+                            <div className="col-half">
+                                <DatePicker
+                                    className="input"
+                                    selected={this.props.endDate}
+                                    onChange={this.props.onEndDateChange}
+                                    minDate={this.props.startDate}
+                                    dateFormat={DATE_FORMAT}
+                                    placeholderText="Click to select end date"
+                                />
                         </div>
                     </div>
                     <div className="step">
@@ -155,12 +201,50 @@ class BPI extends Component {
                     <div className="step">
                         <div className="header">
                             3. Click submit
-                            <div className="cols">
-                                <div className="col-full">
-                                    <button disabled={!(this.props.availableCurrencies && this.props.availableCurrencies.length)} onClick={this.onSubmit.bind(this)} className="input submit">
-                                        Submit
-                                    </button>
-                                </div>
+                        </div>
+                        <div className="cols">
+                            <div className="col-full">
+                                <button disabled={!(this.props.availableCurrencies && this.props.availableCurrencies.length)} onClick={this.onSubmit.bind(this)} className="input submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="step">
+                        <div className="header">
+                            Highlights
+                        </div>
+                        {
+                            highlights.map((h, i) => {
+                                return (
+                                    <div className="cols" key={i}>
+                                        <div className="col-half highlight">
+                                            {h.date}
+                                        </div>
+                                        <div className="col-half highlight">
+                                            {h.description}
+                                        </div>
+                                    </div>
+                                )})
+                            }
+                        <div className="cols">
+                            <div className="col-half">
+                                <DatePicker
+                                    className="input"
+                                    selected={this.props.currentHighlight && this.props.currentHighlight.date}
+                                    onChange={this.props.onCurrentHighlightDateChange}
+                                    dateFormat={DATE_FORMAT}
+                                    placeholderText="Click to highlight end date"
+                                />
+                            </div>
+                            <div className="col-half">
+                                <input className="input" onChange={this.props.onHighlightDateDescription} value={(this.props.currentHighlight && this.props.currentHighlight.description) || ''} placeholder="Highlight date description"/>
+                            </div>
+                            <div className="col-full">
+                                <button disabled={!(this.props.currentHighlight && this.props.currentHighlight.date)} onClick={this.props.onCurrentHighlightSubmit && this.props.onCurrentHighlightSubmit.bind(this)} className="input submit">
+                                    Submit
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -174,6 +258,7 @@ class BPI extends Component {
                             margin={margin}
                             xKey={0}
                             yKey={1}
+                            highlights={this.props.highlights}
                         />
                     ) : null
                 }

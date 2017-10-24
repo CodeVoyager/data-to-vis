@@ -6,7 +6,10 @@ const d3Array = require('d3-array');
 const d3TimeFormat = require('d3-time-format');
 const d3Axis = require('d3-axis');
 const d3Shape = require('d3-shape');
-const R = require('ramda');
+const contains = require('ramda/src/contains');
+const isNil = require('ramda/src/isNil');
+const find = require('ramda/src/find');
+const propEq = require('ramda/src/propEq');
 
 const DEFAULT_MARGIN = {top: 0, right: 0, bottom: 0, left: 0};
 const DEFAULT_WIDTH = 600;
@@ -46,7 +49,7 @@ class Chart extends Component {
         x.domain(d3Array.extent(_data, d => d[this.props.xKey]))
 
         selectedDate = formatTime(x.invert(leftPosition));
-        dataElement = R.find(R.propEq('0', selectedDate))(this.props.data);
+        dataElement = find(propEq('0', selectedDate))(this.props.data);
         if (dataElement) {
             tooltip = {
                 x: x.invert(leftPosition),
@@ -77,6 +80,21 @@ class Chart extends Component {
         return _data;
     }
 
+    normalizeHighlights (highlights) {
+        if (highlights && highlights.length) {
+            const parseTime = d3TimeFormat.timeParse(Chart.timeFormat);
+
+            return highlights.map(x => {
+                return {
+                    description: x.description,
+                    date: parseTime(x.date)
+                };
+            });
+        }
+
+        return [];
+    }
+
     onMouseOver () {
         this.setState(Object.assign({}, this.state, {
             showTooltip: true
@@ -94,11 +112,11 @@ class Chart extends Component {
             return null;
         }
 
-        if (R.isNil(this.props.xKey)) {
+        if (isNil(this.props.xKey)) {
             throw new Error('xKey is required');
         }
 
-        if (R.isNil(this.props.yKey)) {
+        if (isNil(this.props.yKey)) {
             throw new Error('yKey is required');
         }
 
@@ -115,6 +133,7 @@ class Chart extends Component {
             .y(d => y(d[this.props.yKey]))
         const _data = this.normalizeData(this.props.data);
         const formatTime = d3TimeFormat.timeFormat(Chart.timeFormat);
+        const highlights = this.normalizeHighlights(this.props.highlights);
         let focus;
 
         svg.attr('width', this.props.width || DEFAULT_WIDTH);
@@ -138,6 +157,33 @@ class Chart extends Component {
             .attr('stroke-linecap', 'round')
             .attr('stroke-width', 1.5)
             .attr('d', line);
+
+        window.contains = contains;
+
+        highlights.filter(highlight => {
+            const domain = x.domain();
+
+            if (highlight.date >= domain[0] && highlight.date <= domain[1]) {
+                return true;
+            }
+
+            return false;
+        }).forEach((highlight, i) => {
+            g
+                .append('line')
+                .attr('class', 'highlight')
+                .attr('x1', x(highlight.date))
+                .attr('x2', x(highlight.date))
+                .attr('y0', 0)
+                .attr('y1', height)
+            g
+                .append('text')
+                .html(highlight.description)
+                .attr('title', highlight.description)
+                .attr('class', 'highlight-description')
+                .attr('x', x(highlight.date) + 5)
+                .attr('y', i * 20)
+        })
 
         if (this.state.tooltip && this.state.showTooltip) {
             focus = g

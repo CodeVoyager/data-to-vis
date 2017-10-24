@@ -52,11 +52,11 @@ body {
   .cols .col-half {
     display: inline-block;
     width: 50%;
-    padding: 0 3%; }
+    padding: 0 3% 10px; }
   .cols .col-full {
     width: 100%;
     display: block;
-    padding: 0 3%; }
+    padding: 0 3% 10px; }
 
 .steps {
   display: block;
@@ -84,6 +84,8 @@ body {
     outline: 0; }
   .input.submit {
     cursor: pointer; }
+    .input.submit[disabled] {
+      opacity: 0.5; }
 
 .graph {
   text-align: center; }
@@ -103,3 +105,8 @@ body {
     stroke: none;
     fill: #000;
     font-weight: bold; }
+  .graph .highlight {
+    stroke: #804B5F; }
+  .graph .highlight-description {
+    fill: #804B5F;
+    text-anchor: end; }

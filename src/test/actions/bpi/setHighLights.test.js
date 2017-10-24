@@ -1,43 +1,45 @@
-import addHighLight from '../../../actions/bpi/addHighLight';
+import setHighLights from '../../../actions/bpi/setHighLights';
 import moment from 'moment';
 
-describe('addHighLight', function () {
-    const ACTION_NAME = 'BPI_ADD_HIGHLIGHT';
+describe('setHighLights', function () {
+    const ACTION_NAME = 'BPI_SET_HIGHLIGHT';
     const date = '2017-10-31';
-    const description = 'DESCRIPTION';
-    const DATA = {
+    const DATA = [{
         date: date,
-        description
-    };
+        description: 'DESCRIPTION 1'
+    }, {
+        date: date,
+        description: 'DESCRIPTION 2'
+    }];
 
     it('should exist', function (done) {
-        expect(addHighLight).not.toBeUndefined();
+        expect(setHighLights).not.toBeUndefined();
 
         done();
     });
 
 
     it('should return object', function (done) {
-        expect(addHighLight()).toBeInstanceOf(Object);
+        expect(setHighLights()).toBeInstanceOf(Object);
 
         done();
     });
 
 
     it('should return valid action for supplied argument', function (done) {
-        expect(addHighLight(undefined))
+        expect(setHighLights(undefined))
         .toEqual({
             type: ACTION_NAME,
             payload: null
         });
 
-        expect(addHighLight(null))
+        expect(setHighLights(null))
         .toEqual({
             type: ACTION_NAME,
             payload: null
         });
 
-        expect(addHighLight(DATA))
+        expect(setHighLights(DATA))
         .toEqual({
             type: ACTION_NAME,
             payload: DATA
@@ -48,7 +50,7 @@ describe('addHighLight', function () {
 
 
     it('should ignore additional arguments', function (done) {
-        expect(addHighLight(DATA, 'Extra 1', 'Extra 2', 'Extra 3'))
+        expect(setHighLights(DATA, 'Extra 1', 'Extra 2', 'Extra 3'))
         .toEqual({
             type: ACTION_NAME,
             payload: DATA
@@ -58,7 +60,7 @@ describe('addHighLight', function () {
     });
 
     it('should work in immutable fashion', function (done) {
-        expect(addHighLight(DATA).payload)
+        expect(setHighLights(DATA).payload)
         .not.toBe(DATA);
 
         done();
