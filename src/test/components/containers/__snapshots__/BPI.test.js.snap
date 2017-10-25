@@ -1334,7 +1334,7 @@ exports[`BPI component renders correctly 6`] = `
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(0.5,0)"
+            transform="translate(20.5,0)"
           >
             <line
               stroke="#000"
@@ -1347,14 +1347,14 @@ exports[`BPI component renders correctly 6`] = `
               style={Object {}}
               y={9}
             >
-              September
+              2006
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(99.5,0)"
+            transform="translate(81.5,0)"
           >
             <line
               stroke="#000"
@@ -1367,14 +1367,14 @@ exports[`BPI component renders correctly 6`] = `
               style={Object {}}
               y={9}
             >
-              03 AM
+              2007
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(198.5,0)"
+            transform="translate(141.5,0)"
           >
             <line
               stroke="#000"
@@ -1387,14 +1387,14 @@ exports[`BPI component renders correctly 6`] = `
               style={Object {}}
               y={9}
             >
-              06 AM
+              2008
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(296.5,0)"
+            transform="translate(202.5,0)"
           >
             <line
               stroke="#000"
@@ -1407,14 +1407,14 @@ exports[`BPI component renders correctly 6`] = `
               style={Object {}}
               y={9}
             >
-              09 AM
+              2009
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(395.5,0)"
+            transform="translate(263.5,0)"
           >
             <line
               stroke="#000"
@@ -1427,14 +1427,14 @@ exports[`BPI component renders correctly 6`] = `
               style={Object {}}
               y={9}
             >
-              12 PM
+              2010
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(494.5,0)"
+            transform="translate(323.5,0)"
           >
             <line
               stroke="#000"
@@ -1447,14 +1447,14 @@ exports[`BPI component renders correctly 6`] = `
               style={Object {}}
               y={9}
             >
-              03 PM
+              2011
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(593.5,0)"
+            transform="translate(384.5,0)"
           >
             <line
               stroke="#000"
@@ -1467,14 +1467,14 @@ exports[`BPI component renders correctly 6`] = `
               style={Object {}}
               y={9}
             >
-              06 PM
+              2012
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(691.5,0)"
+            transform="translate(445.5,0)"
           >
             <line
               stroke="#000"
@@ -1487,14 +1487,14 @@ exports[`BPI component renders correctly 6`] = `
               style={Object {}}
               y={9}
             >
-              09 PM
+              2013
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(790.5,0)"
+            transform="translate(505.5,0)"
           >
             <line
               stroke="#000"
@@ -1507,7 +1507,87 @@ exports[`BPI component renders correctly 6`] = `
               style={Object {}}
               y={9}
             >
-              Mon 02
+              2014
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(566.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2015
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(626.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2016
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(687.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2017
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(748.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2018
             </text>
           </g>
         </g>
@@ -2425,7 +2505,7 @@ exports[`BPI component renders correctly 9`] = `
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(0.5,0)"
+            transform="translate(20.5,0)"
           >
             <line
               stroke="#000"
@@ -2438,14 +2518,14 @@ exports[`BPI component renders correctly 9`] = `
               style={Object {}}
               y={9}
             >
-              September
+              2006
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(99.5,0)"
+            transform="translate(81.5,0)"
           >
             <line
               stroke="#000"
@@ -2458,14 +2538,14 @@ exports[`BPI component renders correctly 9`] = `
               style={Object {}}
               y={9}
             >
-              03 AM
+              2007
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(198.5,0)"
+            transform="translate(141.5,0)"
           >
             <line
               stroke="#000"
@@ -2478,14 +2558,14 @@ exports[`BPI component renders correctly 9`] = `
               style={Object {}}
               y={9}
             >
-              06 AM
+              2008
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(296.5,0)"
+            transform="translate(202.5,0)"
           >
             <line
               stroke="#000"
@@ -2498,14 +2578,14 @@ exports[`BPI component renders correctly 9`] = `
               style={Object {}}
               y={9}
             >
-              09 AM
+              2009
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(395.5,0)"
+            transform="translate(263.5,0)"
           >
             <line
               stroke="#000"
@@ -2518,14 +2598,14 @@ exports[`BPI component renders correctly 9`] = `
               style={Object {}}
               y={9}
             >
-              12 PM
+              2010
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(494.5,0)"
+            transform="translate(323.5,0)"
           >
             <line
               stroke="#000"
@@ -2538,14 +2618,14 @@ exports[`BPI component renders correctly 9`] = `
               style={Object {}}
               y={9}
             >
-              03 PM
+              2011
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(593.5,0)"
+            transform="translate(384.5,0)"
           >
             <line
               stroke="#000"
@@ -2558,14 +2638,14 @@ exports[`BPI component renders correctly 9`] = `
               style={Object {}}
               y={9}
             >
-              06 PM
+              2012
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(691.5,0)"
+            transform="translate(445.5,0)"
           >
             <line
               stroke="#000"
@@ -2578,14 +2658,14 @@ exports[`BPI component renders correctly 9`] = `
               style={Object {}}
               y={9}
             >
-              09 PM
+              2013
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(790.5,0)"
+            transform="translate(505.5,0)"
           >
             <line
               stroke="#000"
@@ -2598,7 +2678,87 @@ exports[`BPI component renders correctly 9`] = `
               style={Object {}}
               y={9}
             >
-              Mon 02
+              2014
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(566.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2015
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(626.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2016
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(687.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2017
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(748.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2018
             </text>
           </g>
         </g>
@@ -3086,7 +3246,7 @@ exports[`BPI component renders correctly 10`] = `
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(0.5,0)"
+            transform="translate(20.5,0)"
           >
             <line
               stroke="#000"
@@ -3099,14 +3259,14 @@ exports[`BPI component renders correctly 10`] = `
               style={Object {}}
               y={9}
             >
-              September
+              2006
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(99.5,0)"
+            transform="translate(81.5,0)"
           >
             <line
               stroke="#000"
@@ -3119,14 +3279,14 @@ exports[`BPI component renders correctly 10`] = `
               style={Object {}}
               y={9}
             >
-              03 AM
+              2007
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(198.5,0)"
+            transform="translate(141.5,0)"
           >
             <line
               stroke="#000"
@@ -3139,14 +3299,14 @@ exports[`BPI component renders correctly 10`] = `
               style={Object {}}
               y={9}
             >
-              06 AM
+              2008
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(296.5,0)"
+            transform="translate(202.5,0)"
           >
             <line
               stroke="#000"
@@ -3159,14 +3319,14 @@ exports[`BPI component renders correctly 10`] = `
               style={Object {}}
               y={9}
             >
-              09 AM
+              2009
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(395.5,0)"
+            transform="translate(263.5,0)"
           >
             <line
               stroke="#000"
@@ -3179,14 +3339,14 @@ exports[`BPI component renders correctly 10`] = `
               style={Object {}}
               y={9}
             >
-              12 PM
+              2010
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(494.5,0)"
+            transform="translate(323.5,0)"
           >
             <line
               stroke="#000"
@@ -3199,14 +3359,14 @@ exports[`BPI component renders correctly 10`] = `
               style={Object {}}
               y={9}
             >
-              03 PM
+              2011
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(593.5,0)"
+            transform="translate(384.5,0)"
           >
             <line
               stroke="#000"
@@ -3219,14 +3379,14 @@ exports[`BPI component renders correctly 10`] = `
               style={Object {}}
               y={9}
             >
-              06 PM
+              2012
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(691.5,0)"
+            transform="translate(445.5,0)"
           >
             <line
               stroke="#000"
@@ -3239,14 +3399,14 @@ exports[`BPI component renders correctly 10`] = `
               style={Object {}}
               y={9}
             >
-              09 PM
+              2013
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(790.5,0)"
+            transform="translate(505.5,0)"
           >
             <line
               stroke="#000"
@@ -3259,7 +3419,87 @@ exports[`BPI component renders correctly 10`] = `
               style={Object {}}
               y={9}
             >
-              Mon 02
+              2014
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(566.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2015
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(626.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2016
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(687.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2017
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(748.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2018
             </text>
           </g>
         </g>
@@ -3637,30 +3877,84 @@ exports[`BPI component renders correctly 11`] = `
       >
         <div
           className="col-half highlight"
-        />
+        >
+          2005-01-01
+        </div>
         <div
           className="col-half highlight"
-        />
+        >
+          Outside BEFORE
+        </div>
       </div>
       <div
         className="cols"
       >
         <div
           className="col-half highlight"
-        />
+        >
+          2006-10-01
+        </div>
         <div
           className="col-half highlight"
-        />
+        >
+          Mt. Gox founding
+        </div>
       </div>
       <div
         className="cols"
       >
         <div
           className="col-half highlight"
-        />
+        >
+          2015-01-06
+        </div>
         <div
           className="col-half highlight"
-        />
+        >
+          Mt. Gox Bankruptcy
+        </div>
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        >
+          2016-05-01
+        </div>
+        <div
+          className="col-half highlight"
+        >
+          Mt. Gox Bankruptcy (Final)
+        </div>
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        >
+          2017-04-01
+        </div>
+        <div
+          className="col-half highlight"
+        >
+          Bitfinex announced that it was no longer able to let users withdraw their funds in USD
+        </div>
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        >
+          2019-04-01
+        </div>
+        <div
+          className="col-half highlight"
+        >
+          Outside AFTER
+        </div>
       </div>
       <div
         className="cols"
@@ -3753,7 +4047,7 @@ exports[`BPI component renders correctly 11`] = `
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(0.5,0)"
+            transform="translate(20.5,0)"
           >
             <line
               stroke="#000"
@@ -3766,14 +4060,14 @@ exports[`BPI component renders correctly 11`] = `
               style={Object {}}
               y={9}
             >
-              September
+              2006
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(99.5,0)"
+            transform="translate(81.5,0)"
           >
             <line
               stroke="#000"
@@ -3786,14 +4080,14 @@ exports[`BPI component renders correctly 11`] = `
               style={Object {}}
               y={9}
             >
-              03 AM
+              2007
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(198.5,0)"
+            transform="translate(141.5,0)"
           >
             <line
               stroke="#000"
@@ -3806,14 +4100,14 @@ exports[`BPI component renders correctly 11`] = `
               style={Object {}}
               y={9}
             >
-              06 AM
+              2008
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(296.5,0)"
+            transform="translate(202.5,0)"
           >
             <line
               stroke="#000"
@@ -3826,14 +4120,14 @@ exports[`BPI component renders correctly 11`] = `
               style={Object {}}
               y={9}
             >
-              09 AM
+              2009
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(395.5,0)"
+            transform="translate(263.5,0)"
           >
             <line
               stroke="#000"
@@ -3846,14 +4140,14 @@ exports[`BPI component renders correctly 11`] = `
               style={Object {}}
               y={9}
             >
-              12 PM
+              2010
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(494.5,0)"
+            transform="translate(323.5,0)"
           >
             <line
               stroke="#000"
@@ -3866,14 +4160,14 @@ exports[`BPI component renders correctly 11`] = `
               style={Object {}}
               y={9}
             >
-              03 PM
+              2011
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(593.5,0)"
+            transform="translate(384.5,0)"
           >
             <line
               stroke="#000"
@@ -3886,14 +4180,14 @@ exports[`BPI component renders correctly 11`] = `
               style={Object {}}
               y={9}
             >
-              06 PM
+              2012
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(691.5,0)"
+            transform="translate(445.5,0)"
           >
             <line
               stroke="#000"
@@ -3906,14 +4200,14 @@ exports[`BPI component renders correctly 11`] = `
               style={Object {}}
               y={9}
             >
-              09 PM
+              2013
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(790.5,0)"
+            transform="translate(505.5,0)"
           >
             <line
               stroke="#000"
@@ -3926,7 +4220,87 @@ exports[`BPI component renders correctly 11`] = `
               style={Object {}}
               y={9}
             >
-              Mon 02
+              2014
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(566.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2015
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(626.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2016
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(687.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2017
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(748.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2018
             </text>
           </g>
         </g>
@@ -4133,6 +4507,74 @@ exports[`BPI component renders correctly 11`] = `
           strokeWidth={1.5}
           style={Object {}}
         />
+        <line
+          className="highlight"
+          style={Object {}}
+          x1={66}
+          x2={66}
+          y0={0}
+          y1={350}
+        />
+        <text
+          className="highlight-description"
+          style={Object {}}
+          title="Mt. Gox founding"
+          x={71}
+          y={0}
+        >
+          Mt. Gox founding
+        </text>
+        <line
+          className="highlight"
+          style={Object {}}
+          x1={567}
+          x2={567}
+          y0={0}
+          y1={350}
+        />
+        <text
+          className="highlight-description"
+          style={Object {}}
+          title="Mt. Gox Bankruptcy"
+          x={572}
+          y={20}
+        >
+          Mt. Gox Bankruptcy
+        </text>
+        <line
+          className="highlight"
+          style={Object {}}
+          x1={647}
+          x2={647}
+          y0={0}
+          y1={350}
+        />
+        <text
+          className="highlight-description"
+          style={Object {}}
+          title="Mt. Gox Bankruptcy (Final)"
+          x={652}
+          y={40}
+        >
+          Mt. Gox Bankruptcy (Final)
+        </text>
+        <line
+          className="highlight"
+          style={Object {}}
+          x1={702}
+          x2={702}
+          y0={0}
+          y1={350}
+        />
+        <text
+          className="highlight-description"
+          style={Object {}}
+          title="Bitfinex announced that it was no longer able to let users withdraw their funds in USD"
+          x={707}
+          y={60}
+        >
+          Bitfinex announced that it was no longer able to let users withdraw their funds in USD
+        </text>
         <rect
           className="overlay"
           height={350}
@@ -4321,30 +4763,84 @@ exports[`BPI component renders correctly 12`] = `
       >
         <div
           className="col-half highlight"
-        />
+        >
+          2005-01-01
+        </div>
         <div
           className="col-half highlight"
-        />
+        >
+          Outside BEFORE
+        </div>
       </div>
       <div
         className="cols"
       >
         <div
           className="col-half highlight"
-        />
+        >
+          2006-10-01
+        </div>
         <div
           className="col-half highlight"
-        />
+        >
+          Mt. Gox founding
+        </div>
       </div>
       <div
         className="cols"
       >
         <div
           className="col-half highlight"
-        />
+        >
+          2015-01-06
+        </div>
         <div
           className="col-half highlight"
-        />
+        >
+          Mt. Gox Bankruptcy
+        </div>
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        >
+          2016-05-01
+        </div>
+        <div
+          className="col-half highlight"
+        >
+          Mt. Gox Bankruptcy (Final)
+        </div>
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        >
+          2017-04-01
+        </div>
+        <div
+          className="col-half highlight"
+        >
+          Bitfinex announced that it was no longer able to let users withdraw their funds in USD
+        </div>
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half highlight"
+        >
+          2019-04-01
+        </div>
+        <div
+          className="col-half highlight"
+        >
+          Outside AFTER
+        </div>
       </div>
       <div
         className="cols"
@@ -4437,7 +4933,7 @@ exports[`BPI component renders correctly 12`] = `
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(0.5,0)"
+            transform="translate(20.5,0)"
           >
             <line
               stroke="#000"
@@ -4450,14 +4946,14 @@ exports[`BPI component renders correctly 12`] = `
               style={Object {}}
               y={9}
             >
-              September
+              2006
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(99.5,0)"
+            transform="translate(81.5,0)"
           >
             <line
               stroke="#000"
@@ -4470,14 +4966,14 @@ exports[`BPI component renders correctly 12`] = `
               style={Object {}}
               y={9}
             >
-              03 AM
+              2007
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(198.5,0)"
+            transform="translate(141.5,0)"
           >
             <line
               stroke="#000"
@@ -4490,14 +4986,14 @@ exports[`BPI component renders correctly 12`] = `
               style={Object {}}
               y={9}
             >
-              06 AM
+              2008
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(296.5,0)"
+            transform="translate(202.5,0)"
           >
             <line
               stroke="#000"
@@ -4510,14 +5006,14 @@ exports[`BPI component renders correctly 12`] = `
               style={Object {}}
               y={9}
             >
-              09 AM
+              2009
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(395.5,0)"
+            transform="translate(263.5,0)"
           >
             <line
               stroke="#000"
@@ -4530,14 +5026,14 @@ exports[`BPI component renders correctly 12`] = `
               style={Object {}}
               y={9}
             >
-              12 PM
+              2010
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(494.5,0)"
+            transform="translate(323.5,0)"
           >
             <line
               stroke="#000"
@@ -4550,14 +5046,14 @@ exports[`BPI component renders correctly 12`] = `
               style={Object {}}
               y={9}
             >
-              03 PM
+              2011
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(593.5,0)"
+            transform="translate(384.5,0)"
           >
             <line
               stroke="#000"
@@ -4570,14 +5066,14 @@ exports[`BPI component renders correctly 12`] = `
               style={Object {}}
               y={9}
             >
-              06 PM
+              2012
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(691.5,0)"
+            transform="translate(445.5,0)"
           >
             <line
               stroke="#000"
@@ -4590,14 +5086,14 @@ exports[`BPI component renders correctly 12`] = `
               style={Object {}}
               y={9}
             >
-              09 PM
+              2013
             </text>
           </g>
           <g
             className="tick"
             opacity={1}
             style={Object {}}
-            transform="translate(790.5,0)"
+            transform="translate(505.5,0)"
           >
             <line
               stroke="#000"
@@ -4610,7 +5106,87 @@ exports[`BPI component renders correctly 12`] = `
               style={Object {}}
               y={9}
             >
-              Mon 02
+              2014
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(566.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2015
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(626.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2016
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(687.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2017
+            </text>
+          </g>
+          <g
+            className="tick"
+            opacity={1}
+            style={Object {}}
+            transform="translate(748.5,0)"
+          >
+            <line
+              stroke="#000"
+              style={Object {}}
+              y2={6}
+            />
+            <text
+              dy="0.71em"
+              fill="#000"
+              style={Object {}}
+              y={9}
+            >
+              2018
             </text>
           </g>
         </g>
@@ -4817,6 +5393,74 @@ exports[`BPI component renders correctly 12`] = `
           strokeWidth={1.5}
           style={Object {}}
         />
+        <line
+          className="highlight"
+          style={Object {}}
+          x1={66}
+          x2={66}
+          y0={0}
+          y1={350}
+        />
+        <text
+          className="highlight-description"
+          style={Object {}}
+          title="Mt. Gox founding"
+          x={71}
+          y={0}
+        >
+          Mt. Gox founding
+        </text>
+        <line
+          className="highlight"
+          style={Object {}}
+          x1={567}
+          x2={567}
+          y0={0}
+          y1={350}
+        />
+        <text
+          className="highlight-description"
+          style={Object {}}
+          title="Mt. Gox Bankruptcy"
+          x={572}
+          y={20}
+        >
+          Mt. Gox Bankruptcy
+        </text>
+        <line
+          className="highlight"
+          style={Object {}}
+          x1={647}
+          x2={647}
+          y0={0}
+          y1={350}
+        />
+        <text
+          className="highlight-description"
+          style={Object {}}
+          title="Mt. Gox Bankruptcy (Final)"
+          x={652}
+          y={40}
+        >
+          Mt. Gox Bankruptcy (Final)
+        </text>
+        <line
+          className="highlight"
+          style={Object {}}
+          x1={702}
+          x2={702}
+          y0={0}
+          y1={350}
+        />
+        <text
+          className="highlight-description"
+          style={Object {}}
+          title="Bitfinex announced that it was no longer able to let users withdraw their funds in USD"
+          x={707}
+          y={60}
+        >
+          Bitfinex announced that it was no longer able to let users withdraw their funds in USD
+        </text>
         <rect
           className="overlay"
           height={350}

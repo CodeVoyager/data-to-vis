@@ -17,13 +17,34 @@ describe('BPI component', function () {
         const currencies = ['USD', 'PLN'];
         const currency = 'USD';
         const data = [
-            ['2013-09-01', 128.2597],
-            ['2013-09-02', 127.3648]
+            ['2005-09-01', 128.2597],
+            ['2018-09-12', 127.3648]
         ];
         const highlights = [
-            ['2013-09-01', 'HIGHLIGHT'],
-            ['2013-09-02', null],
-            ['2014-09-02', undefined],
+            {
+                date: '2005-01-01',
+                description: 'Outside BEFORE'
+            },
+            {
+                date: '2006-10-01',
+                description: 'Mt. Gox founding'
+            },
+            {
+                date: '2015-01-06',
+                description: 'Mt. Gox Bankruptcy'
+            },
+            {
+                date: '2016-05-01',
+                description: 'Mt. Gox Bankruptcy (Final)'
+            },
+            {
+                date: '2017-04-01',
+                description: 'Bitfinex announced that it was no longer able to let users withdraw their funds in USD'
+            },
+            {
+                date: '2019-04-01',
+                description: 'Outside AFTER'
+            },
         ];
 
         const tree1 = renderer.create(<BPI />).toJSON();
