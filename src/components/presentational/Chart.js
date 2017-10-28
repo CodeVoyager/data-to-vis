@@ -67,14 +67,16 @@ class Chart extends Component {
 
         if (data[0] instanceof Array) {
             _data = data.map(d => [parseTime(d[this.props.xKey]), d[this.props.yKey]])
-        } else if (data[0] instanceof Object) {
-            _data = data.map((d) => {
-                const newObject = {};
-                newObject[this.props.xKey] = parseTime(d[this.props.xKey]);
-                newObject[this.props.yKey] = Number(d[this.props.yKey]);
+        } else {
+            if (data[0] instanceof Object) {
+                _data = data.map((d) => {
+                    const newObject = {};
+                    newObject[this.props.xKey] = parseTime(d[this.props.xKey]);
+                    newObject[this.props.yKey] = Number(d[this.props.yKey]);
 
-                return Object.assign({}, d, newObject);
-            });
+                    return Object.assign({}, d, newObject);
+                });
+            }
         }
 
         return _data;
