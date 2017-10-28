@@ -9,18 +9,18 @@ describe('highlights selector', function () {
     });
 
     it('should work on undefined state', function (done) {
-        expect(highlights()).toBeUndefined();
+        expect(highlights()).toEqual([]);
         done();
     });
 
     it('should return undefined on undefined state', function (done) {
-        expect(highlights()).toBeUndefined();
+        expect(highlights()).toEqual([]);
         done();
     });
 
     it('should return undefined on state without attribute "highlights"', function (done) {
-        expect(highlights({})).toBeUndefined();
-        expect(highlights({bpi: {}})).toBeUndefined();
+        expect(highlights({})).toEqual([]);
+        expect(highlights({bpi: {}})).toEqual([]);
         done();
     });
 

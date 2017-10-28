@@ -9,18 +9,18 @@ describe('currency selector', function () {
     });
 
     it('should work on undefined state', function (done) {
-        expect(currency()).toBeUndefined();
+        expect(currency()).toBeNull();
         done();
     });
 
     it('should return undefined on undefined state', function (done) {
-        expect(currency()).toBeUndefined();
+        expect(currency()).toBeNull();
         done();
     });
 
     it('should return undefined on state without attribute "currency"', function (done) {
-        expect(currency({})).toBeUndefined();
-        expect(currency({bpi: {}})).toBeUndefined();
+        expect(currency({})).toBeNull();
+        expect(currency({bpi: {}})).toBeNull();
         done();
     });
 

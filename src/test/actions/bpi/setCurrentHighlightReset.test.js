@@ -1,29 +1,29 @@
-import currentHighlightReset from '../../../actions/bpi/currentHighlightReset';
+import resetCurrentHighlight from '../../../actions/bpi/resetCurrentHighlight';
 
-describe('currentHighlightReset', function () {
+describe('resetCurrentHighlight', function () {
     const ACTION_NAME = 'BPI_SET_CURRENT_HIGHLIGHT_RESET';
 
     it('should exist', function (done) {
-        expect(currentHighlightReset).not.toBeUndefined();
+        expect(resetCurrentHighlight).not.toBeUndefined();
 
         done();
     });
 
 
     it('should return object', function (done) {
-        expect(currentHighlightReset()).toBeInstanceOf(Object);
+        expect(resetCurrentHighlight()).toBeInstanceOf(Object);
 
         done();
     });
 
 
     it('should return valid action for supplied argument', function (done) {
-        expect(currentHighlightReset(undefined))
+        expect(resetCurrentHighlight(undefined))
         .toEqual({
             type: ACTION_NAME,
         });
 
-        expect(currentHighlightReset(null))
+        expect(resetCurrentHighlight(null))
         .toEqual({
             type: ACTION_NAME,
         });
@@ -33,7 +33,7 @@ describe('currentHighlightReset', function () {
 
 
     it('should ignore additional arguments', function (done) {
-        expect(currentHighlightReset('Extra 1', 'Extra 2', 'Extra 3'))
+        expect(resetCurrentHighlight('Extra 1', 'Extra 2', 'Extra 3'))
         .toEqual({
             type: ACTION_NAME,
         });

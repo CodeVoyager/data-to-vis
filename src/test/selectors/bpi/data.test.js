@@ -9,18 +9,18 @@ describe('data selector', function () {
     });
 
     it('should work on undefined state', function (done) {
-        expect(data()).toBeUndefined();
+        expect(data()).toEqual([]);
         done();
     });
 
     it('should return undefined on undefined state', function (done) {
-        expect(data()).toBeUndefined();
+        expect(data()).toEqual([]);
         done();
     });
 
     it('should return undefined on state without attribute "data"', function (done) {
-        expect(data({})).toBeUndefined();
-        expect(data({bpi: {}})).toBeUndefined();
+        expect(data({})).toEqual([])
+        expect(data({bpi: {}})).toEqual([])
         done();
     });
 

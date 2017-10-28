@@ -9,18 +9,18 @@ describe('startDate selector', function () {
     });
 
     it('should work on undefined state', function (done) {
-        expect(startDate()).toBeUndefined();
+        expect(startDate()).toBeNull();
         done();
     });
 
     it('should return undefined on undefined state', function (done) {
-        expect(startDate()).toBeUndefined();
+        expect(startDate()).toBeNull();
         done();
     });
 
     it('should return undefined on state without attribute "startDate"', function (done) {
-        expect(startDate({})).toBeUndefined();
-        expect(startDate({bpi: {}})).toBeUndefined();
+        expect(startDate({})).toBeNull();
+        expect(startDate({bpi: {}})).toBeNull();
         done();
     });
 

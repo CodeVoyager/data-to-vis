@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BPI api should properly handle .getCurrencies 1`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 2`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getData 1`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getData 2`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;

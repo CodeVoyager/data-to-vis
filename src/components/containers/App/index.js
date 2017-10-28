@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import {
-  BrowserRouter as Router,
-  Route
+    Route,
+    BrowserRouter as Router
 } from 'react-router-dom';
 import { Provider } from 'react-redux'
-import store from '../../store';
-import BPI from './BPI';
-import Grid from '../presentational/Grid';
+import store from '../../../store';
+import BPI from '../BPI';
+import Grid from '../../presentational/Grid';
 
 class App extends Component {
     render () {

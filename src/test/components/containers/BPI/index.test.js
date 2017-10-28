@@ -1,8 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BPI} from '../../../components/containers/BPI';
+import {BPI} from '../../../../components/containers/BPI';
 import renderer from 'react-test-renderer';
 import moment from 'moment';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import {
+    shallow
+} from 'enzyme';
+
+configure({ adapter: new Adapter() });
+
+
+jest.mock('../../../../api/bpi.js', () => {
+    return {
+        getData: (_startDate, _endDate, _currency, callback) => {
+            if (callback) {
+                callback(['DATA1', 'DATA2', 'DATA3']);
+            }
+        },
+        getCurrencies: (callback) => {
+            if (callback) {
+                callback([]);
+            }
+        }
+    }
+});
 
 
 describe('BPI component', function () {
@@ -46,6 +69,10 @@ describe('BPI component', function () {
                 description: 'Outside AFTER'
             },
         ];
+        const currentHighlight = {
+            date: startDate,
+            description: 'DESCRIPTION'
+        };
 
         const tree1 = renderer.create(<BPI />).toJSON();
         expect(tree1).toMatchSnapshot();
@@ -82,6 +109,9 @@ describe('BPI component', function () {
 
         const tree12 = renderer.create(<BPI data={data} highlights={highlights} isLoading={false} currency={currency} availableCurrencies={currencies} startDate={startDate} endDate={endDate} />).toJSON();
         expect(tree12).toMatchSnapshot();
+
+        const tree13 = renderer.create(<BPI currentHighlight={currentHighlight} />).toJSON();
+        expect(tree13).toMatchSnapshot();
     });
 
     it('should have onCurrencyChange method', function () {
@@ -112,12 +142,10 @@ describe('BPI component', function () {
     it('should onCurrenciesAvailable pass valid data to props.onCurrenciesAvailable on invoke', function (done) {
         const fn = jest.fn();
         const component = renderer.create(<BPI onCurrenciesAvailable={fn} />);
-        const DATA = 'DATA';
-
-        component.getInstance().onCurrenciesAvailable(DATA);
+        const DATA = [];
 
         expect(fn.mock.calls.length).toBe(1);
-        expect(fn.mock.calls[0][0]).toBe(DATA);
+        expect(fn.mock.calls[0][0]).toEqual(DATA);
 
         done();
     });
@@ -155,4 +183,50 @@ describe('BPI component', function () {
         expect(onComponentDidMountMock.mock.calls.length).toBe(1);
         done();
     });
+
+
+    it('should run props.onDataAvailable after api call on onSubmit', (done) => {
+        const DATA = ['DATA1', 'DATA2', 'DATA3'];
+        const date = moment('20171031', 'YYYYMMDD');
+        const startDate = date.subtract(1, 'days');
+        const endDate = date.add(1, 'days');
+        const currency = 'USD';
+        const currentHighlight = {
+            date: date,
+            description: 'DESCRIPTION'
+        };
+        const onDataAvailableMock = jest.fn();
+        const component = renderer.create(<BPI currentHighlight={currentHighlight} startDate={startDate} endDate={endDate} currency={currency} onDataAvailable={onDataAvailableMock}/>);
+
+        component.getInstance().onSubmit();
+
+        expect(onDataAvailableMock.mock.calls.length).toBe(1);
+        expect(onDataAvailableMock.mock.calls[0][0]).toEqual(DATA);
+
+        done();
+    });
+
+
+    it('should invoke prop.onCurrentHighlightSubmit on button click', (done) => {
+        const date = moment('20171031', 'YYYYMMDD');
+        const startDate = date.subtract(1, 'days');
+        const endDate = date.add(1, 'days');
+        const currency = 'USD';
+        const currentHighlight = {
+            date: date,
+            description: 'DESCRIPTION'
+        };
+        const onCurrentHighlightSubmitMock = jest.fn();
+        const component = shallow(<BPI currentHighlight={currentHighlight} startDate={startDate} endDate={endDate} currency={currency} onCurrentHighlightSubmit={onCurrentHighlightSubmitMock}/>);
+
+        component.find('.submit.current-highlight').simulate('click');
+
+        expect(onCurrentHighlightSubmitMock.mock.calls.length).toBe(1);
+
+        done();
+
+        done();
+    });
+
+
 });

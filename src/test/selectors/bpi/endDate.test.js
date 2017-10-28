@@ -9,18 +9,18 @@ describe('endDate selector', function () {
     });
 
     it('should work on undefined state', function (done) {
-        expect(endDate()).toBeUndefined();
+        expect(endDate()).toBeNull();
         done();
     });
 
     it('should return undefined on undefined state', function (done) {
-        expect(endDate()).toBeUndefined();
+        expect(endDate()).toBeNull();
         done();
     });
 
     it('should return undefined on state without attribute "endDate"', function (done) {
-        expect(endDate({})).toBeUndefined();
-        expect(endDate({bpi: {}})).toBeUndefined();
+        expect(endDate({})).toBeNull();
+        expect(endDate({bpi: {}})).toBeNull();
         done();
     });
 

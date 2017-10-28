@@ -1,3 +1,3 @@
 export default (state) => {
-    return state && state.bpi && state.bpi.currentHighlight;
+    return (state && state.bpi && state.bpi.currentHighlight) || null;
 }

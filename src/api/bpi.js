@@ -27,6 +27,7 @@ const getCurrencies = (callback) => {
         callback(x);
     })
     .catch(error => {
+        callback(null);
         store.dispatch(stopLoading());
     });
 }
@@ -42,22 +43,27 @@ const getData = (startDate, endDate, currency, callback) => {
     const urlData = R.map(R.join('='), R.toPairs(notEmpty(data))).join('&');
 
     store.dispatch(startLoading());
-    fetch([CORS_PROXY, BASE_URL, 'historical/close.json', '?', urlData].join(''), {
+    const promise = fetch([CORS_PROXY, BASE_URL, 'historical/close.json', '?', urlData].join(''), {
         method: 'GET',
         headers: {
             'Accept': 'application/json'
         }
     })
-    .then(x => x.json())
-    .then(R.prop('bpi'))
-    .then(R.toPairs)
-    .then(function (x) {
-        store.dispatch(stopLoading());
-        callback(x);
-    })
-    .catch(error => {
-        store.dispatch(stopLoading());
-    });
+
+    promise
+        .then(x => x.json())
+        .then(R.prop('bpi'))
+        .then(R.toPairs)
+        .then(function (x) {
+            store.dispatch(stopLoading());
+            callback(x);
+        })
+
+    promise
+        .catch(error => {
+            callback(null);
+            store.dispatch(stopLoading());
+        });
 }
 
 export default {

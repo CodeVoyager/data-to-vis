@@ -9,18 +9,18 @@ describe('currentHighlight selector', function () {
     });
 
     it('should work on undefined state', function (done) {
-        expect(currentHighlight()).toBeUndefined();
+        expect(currentHighlight()).toBeNull();
         done();
     });
 
     it('should return undefined on undefined state', function (done) {
-        expect(currentHighlight()).toBeUndefined();
+        expect(currentHighlight()).toBeNull();
         done();
     });
 
     it('should return undefined on state without attribute "currentHighlight"', function (done) {
-        expect(currentHighlight({})).toBeUndefined();
-        expect(currentHighlight({bpi: {}})).toBeUndefined();
+        expect(currentHighlight({})).toBeNull();
+        expect(currentHighlight({bpi: {}})).toBeNull();
         done();
     });
 

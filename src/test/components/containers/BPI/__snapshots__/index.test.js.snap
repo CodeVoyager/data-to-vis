@@ -202,7 +202,7 @@ exports[`BPI component renders correctly 1`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -417,7 +417,7 @@ exports[`BPI component renders correctly 2`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -632,7 +632,7 @@ exports[`BPI component renders correctly 3`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -864,7 +864,7 @@ exports[`BPI component renders correctly 4`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -1079,7 +1079,7 @@ exports[`BPI component renders correctly 5`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -1294,7 +1294,7 @@ exports[`BPI component renders correctly 6`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -2011,7 +2011,7 @@ exports[`BPI component renders correctly 7`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -2226,7 +2226,7 @@ exports[`BPI component renders correctly 8`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -2465,7 +2465,7 @@ exports[`BPI component renders correctly 9`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -3206,7 +3206,7 @@ exports[`BPI component renders correctly 10`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -4007,7 +4007,7 @@ exports[`BPI component renders correctly 11`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -4893,7 +4893,7 @@ exports[`BPI component renders correctly 12`] = `
           className="col-full"
         >
           <button
-            className="input submit"
+            className="input submit current-highlight"
             disabled={true}
             onClick={undefined}
           >
@@ -5472,6 +5472,221 @@ exports[`BPI component renders correctly 12`] = `
         />
       </g>
     </svg>
+  </div>
+</div>
+`;
+
+exports[`BPI component renders correctly 13`] = `
+<div
+  className="bpi"
+>
+  <header
+    className="header"
+  >
+    <h1
+      className="title"
+    >
+      Data to Vis
+    </h1>
+    <h2
+      className="sub-title"
+    >
+      Bitcoin price index chart
+    </h2>
+  </header>
+  <div
+    className="steps"
+  >
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        1. Select dates
+      </div>
+    </div>
+    <div
+      className="cols"
+    >
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
+            <div
+              className="react-datepicker__input-container"
+            >
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select start date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-half"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
+            <div
+              className="react-datepicker__input-container"
+            >
+              <input
+                autoComplete={undefined}
+                autoFocus={undefined}
+                className="input"
+                disabled={false}
+                id={undefined}
+                name={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Click to select end date"
+                readOnly={undefined}
+                required={undefined}
+                tabIndex={undefined}
+                title={undefined}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        2. Select currency
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-full"
+        />
+      </div>
+    </div>
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        3. Click submit
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit"
+            disabled={true}
+            onClick={[Function]}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="step"
+    >
+      <div
+        className="header"
+      >
+        Highlights
+      </div>
+      <div
+        className="cols"
+      >
+        <div
+          className="col-half"
+        >
+          <div>
+            <div
+              className="react-datepicker-wrapper"
+            >
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="input"
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Click to highlight end date"
+                  readOnly={undefined}
+                  required={undefined}
+                  tabIndex={undefined}
+                  title={undefined}
+                  type="text"
+                  value="2017-10-01"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-half"
+        >
+          <input
+            className="input"
+            onChange={undefined}
+            placeholder="Highlight date description"
+            value="DESCRIPTION"
+          />
+        </div>
+        <div
+          className="col-full"
+        >
+          <button
+            className="input submit current-highlight"
+            disabled={false}
+            onClick={undefined}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
