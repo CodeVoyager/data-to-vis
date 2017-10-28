@@ -29,7 +29,7 @@ Array [
 exports[`BPI connect mapDispatchToProps should should pass valid actions dispatch 2`] = `
 Array [
   Object {
-    "payload": "20121027",
+    "payload": "20121028",
     "type": "BPI_SET_START_DATE",
   },
 ]
@@ -38,7 +38,7 @@ Array [
 exports[`BPI connect mapDispatchToProps should should pass valid actions dispatch 3`] = `
 Array [
   Object {
-    "payload": "20171027",
+    "payload": "20171028",
     "type": "BPI_SET_END_DATE",
   },
 ]

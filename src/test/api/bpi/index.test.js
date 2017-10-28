@@ -18,55 +18,50 @@ describe('BPI api', () => {
     global.fetch = (url, args) => {
         if (-1 !== url.indexOf('http://localhost:8080/https://api.coindesk.com/v1/bpi/historical/close.json')) {
             return new Promise(function (resolve, reject) {
-                setTimeout(function () {
-                    console.log(counter);
-                    if (++counter % 3 === 0) {
-                        reject();
-                        return;
+                if (++counter % 3 === 0) {
+                    reject();
+                    return;
+                }
+                resolve({
+                    json: () => {
+                        return {
+                            bpi: {
+                                "2017-09-26": 3895.5125,
+                                "2017-09-27": 4208.5613,
+                                "2017-09-28": 4185.2925,
+                                "2017-09-29": 4164.1038,
+                                "2017-09-30": 4353.0475,
+                            },
+                            "disclaimer": "This data was produced from the CoinDesk Bitcoin Price Index. BPI value data returned as USD.",
+                            "time": {
+                                "updated": "Oct 27, 2017 00:03:00 UTC",
+                                "updatedISO": "2017-10-27T00:03:00+00:00"
+                            }
+                        };
                     }
-                    resolve({
-                        json: () => {
-                            return {
-                                bpi: {
-                                    "2017-09-26": 3895.5125,
-                                    "2017-09-27": 4208.5613,
-                                    "2017-09-28": 4185.2925,
-                                    "2017-09-29": 4164.1038,
-                                    "2017-09-30": 4353.0475,
-                                },
-                                "disclaimer": "This data was produced from the CoinDesk Bitcoin Price Index. BPI value data returned as USD.",
-                                "time": {
-                                    "updated": "Oct 27, 2017 00:03:00 UTC",
-                                    "updatedISO": "2017-10-27T00:03:00+00:00"
-                                }
-                            };
-                        }
-                    });
-                }, 100);
+                });
             });
         }
         if ('http://localhost:8080/https://api.coindesk.com/v1/bpi/supported-currencies.json' === url) {
             return new Promise(function (resolve, reject) {
-                setTimeout(function () {
-                    if (++counter % 2 === 0) {
-                        reject();
-                        return;
+                if (++counter % 3 === 0) {
+                    reject();
+                    return;
+                }
+                resolve({
+                    json: () => {
+                        return [{
+                            "currency": "AED",
+                            "country": "United Arab Emirates Dirham"
+                        }, {
+                            "currency": "AFN",
+                            "country": "Afghan Afghani"
+                        }, {
+                            "currency": "ALL",
+                            "country": "Albanian Lek"
+                        }];
                     }
-                    resolve({
-                        json: () => {
-                            return [{
-                                "currency": "AED",
-                                "country": "United Arab Emirates Dirham"
-                            }, {
-                                "currency": "AFN",
-                                "country": "Afghan Afghani"
-                            }, {
-                                "currency": "ALL",
-                                "country": "Albanian Lek"
-                            }];
-                        }
-                    });
-                }, 100);
+                });
             });
         }
     }
@@ -139,6 +134,33 @@ describe('BPI api', () => {
                 "currency": "ALL",
                 "country": "Albanian Lek"
             }]));
+            store.dispatch.mock.calls.forEach((arg) => {
+                expect(arg).toMatchSnapshot();
+            });
+
+            done();
+        });
+
+        api.getCurrencies((result) => {
+            expect(result).toEqual(map(prop('currency'))([{
+                "currency": "AED",
+                "country": "United Arab Emirates Dirham"
+            }, {
+                "currency": "AFN",
+                "country": "Afghan Afghani"
+            }, {
+                "currency": "ALL",
+                "country": "Albanian Lek"
+            }]));
+            store.dispatch.mock.calls.forEach((arg) => {
+                expect(arg).toMatchSnapshot();
+            });
+
+            done();
+        });
+
+        api.getCurrencies((result) => {
+            expect(result).toBeNull();
             store.dispatch.mock.calls.forEach((arg) => {
                 expect(arg).toMatchSnapshot();
             });

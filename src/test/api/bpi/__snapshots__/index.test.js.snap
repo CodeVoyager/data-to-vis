@@ -11,6 +11,102 @@ Array [
 exports[`BPI api should properly handle .getCurrencies 2`] = `
 Array [
   Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 3`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 4`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 5`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 6`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 7`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 8`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 9`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 10`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 11`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 12`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 13`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getCurrencies 14`] = `
+Array [
+  Object {
     "type": "STOP_LOADING",
   },
 ]
@@ -25,6 +121,54 @@ Array [
 `;
 
 exports[`BPI api should properly handle .getData 2`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getData 3`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getData 4`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getData 5`] = `
+Array [
+  Object {
+    "type": "START_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getData 6`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getData 7`] = `
+Array [
+  Object {
+    "type": "STOP_LOADING",
+  },
+]
+`;
+
+exports[`BPI api should properly handle .getData 8`] = `
 Array [
   Object {
     "type": "STOP_LOADING",
