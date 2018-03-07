@@ -5,7 +5,9 @@ import {
     startDate,
     endDate,
     highlights,
-    currentHighlight
+    currentHighlight,
+    availableChartTypes,
+    chartType,
 } from '../../../../selectors/bpi';
 import {
     isLoading,
@@ -21,6 +23,8 @@ const mapStateToProps = state => {
         isLoading: isLoading(state),
         highlights: highlights(state),
         currentHighlight: currentHighlight(state),
+        availableChartTypes: availableChartTypes(state),
+        chartType: chartType(state),
     };
 }
 

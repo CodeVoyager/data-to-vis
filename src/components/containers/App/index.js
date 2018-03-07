@@ -10,11 +10,12 @@ import Grid from '../../presentational/Grid';
 
 class App extends Component {
     render () {
+        const a = {};
         return (
             <Provider store={store}>
                 <Router>
                     <div className="app">
-                        <Route exact path="/" component={Grid}/>
+                        <Route exact path="/" component={Grid} some={a} dupa="TEST2"/>
                         <Route path="/bpi" component={BPI}/>
                     </div>
                 </Router>

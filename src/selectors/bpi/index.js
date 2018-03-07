@@ -5,6 +5,8 @@ import startDate from './startDate';
 import endDate from './endDate';
 import highlights from './highlights';
 import currentHighlight from './currentHighlight';
+import availableChartTypes from './availableChartTypes';
+import chartType from './chartType';
 
 export {
     availableCurrencies,
@@ -14,4 +16,6 @@ export {
     endDate,
     highlights,
     currentHighlight,
+    availableChartTypes,
+    chartType,
 };

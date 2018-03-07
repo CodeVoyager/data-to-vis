@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BPI mapStateToProps should produce valid results for valid state 1`] = `
+Object {
+  "availableChartTypes": Array [
+    "CHART_TYPE",
+  ],
+  "availableCurrencies": Array [
+    "USD",
+  ],
+  "chartType": "CHART_TYPE",
+  "currency": "USD",
+  "currentHighlight": null,
+  "data": Array [],
+  "endDate": "2017-10-22T22:00:00.000Z",
+  "highlights": Array [],
+  "isLoading": false,
+  "startDate": "2017-10-20T22:00:00.000Z",
+}
+`;
+
+exports[`BPI mapStateToProps should produce valid results for valid state 2`] = `
+Object {
+  "availableChartTypes": Array [
+    "CHART_TYPE",
+  ],
+  "availableCurrencies": Array [
+    "USD",
+  ],
+  "chartType": "CHART_TYPE",
+  "currency": "USD",
+  "currentHighlight": Object {
+    "date": "2017-10-21T22:00:00.000Z",
+    "description": "DESCRIPTION",
+  },
+  "data": Array [],
+  "endDate": "2017-10-22T22:00:00.000Z",
+  "highlights": Array [],
+  "isLoading": true,
+  "startDate": "2017-10-20T22:00:00.000Z",
+}
+`;

@@ -9,6 +9,7 @@ import {
     setCurrentHighlightDescription,
     resetCurrentHighlight,
     addHighLight,
+    setChartType
 } from '../../../../actions/bpi';
 import find from 'ramda/src/find';
 import equals from 'ramda/src/equals';
@@ -76,6 +77,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
                 description: this.props.currentHighlight.description,
             }));
             dispatch(resetCurrentHighlight());
+        },
+        onChartTypeChange: (event) => {
+            dispatch(setChartType(event.target.value))
         }
     }
 }

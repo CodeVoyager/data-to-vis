@@ -9,6 +9,7 @@ import setHighLights from './setHighLights';
 import setCurrentHighlightDate from './setCurrentHighlightDate';
 import setCurrentHighlightDescription from './setCurrentHighlightDescription';
 import resetCurrentHighlight from './resetCurrentHighlight';
+import setChartType from './setChartType';
 
 const actions = {
     setAvailableCurrencies,
@@ -22,6 +23,7 @@ const actions = {
     setCurrentHighlightDate,
     setCurrentHighlightDescription,
     resetCurrentHighlight,
+    setChartType,
 };
 
 export default actions;
@@ -38,4 +40,5 @@ export {
     setCurrentHighlightDate,
     setCurrentHighlightDescription,
     resetCurrentHighlight,
+    setChartType,
 }
